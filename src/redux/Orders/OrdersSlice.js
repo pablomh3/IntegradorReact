@@ -10,14 +10,14 @@ const ordersSlice = createSlice({
     name: 'orders',
     initialState,
     reducers:{
-        createOrderFail: (state, action) => {
+        createOrdersFail: (state, action) => {
             return{
                 ...state,
                 loading: false,
                 error: action.payload
             }
         },
-        fetchOrderSuccess: (state, action) =>{
+        fetchOrdersSuccess: (state, action) =>{
             return{
                 ...state,
                 loading: false,
@@ -26,7 +26,7 @@ const ordersSlice = createSlice({
             }
         },
 
-        fetchOrderFail: (state, action) =>{
+        fetchOrdersFail: (state, action) =>{
             return{
                 ...state,
                 loading: false,
@@ -34,7 +34,7 @@ const ordersSlice = createSlice({
             
             }
         },
-        fetchOrderStart: (state) =>{
+        fetchOrdersStart: (state) =>{
             return{
                 ...state,
                 loading: true,
@@ -55,7 +55,7 @@ const ordersSlice = createSlice({
     }
 })
 
-export const { createOrderFail, fetchOrderSuccess, fetchOrderFail, fetchOrderStart, clearError, clearOrders
+export const { createOrdersFail, fetchOrdersSuccess, fetchOrdersFail, fetchOrdersStart, clearError, clearOrders
 } = ordersSlice.actions
 
 export default ordersSlice.reducer

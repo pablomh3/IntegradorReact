@@ -31,7 +31,7 @@ export const ProductsCategories = styled.div`
   gap: 30px;
   overflow: hidden;
   justify-content: center;
-
+  flex-wrap: wrap;
 `
 
 
@@ -65,7 +65,7 @@ export const ProductsRender = styled.div`
   align-items: center;
   gap: 30px;
   overflow: hidden;
-
+  flex-wrap: wrap;
 `
 export const Card = styled.div`
   display: flex;
@@ -79,12 +79,14 @@ export const Card = styled.div`
   border-radius: 2%;
   padding: 20px;
   gap: 25px;
+  
 img{
   height: 250px;
   width: 250px;
 }
 
 @media (max-width: 992px){
+  height: 400px;
   img{
     height: 100px;
     width: 100px;

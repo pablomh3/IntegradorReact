@@ -10,6 +10,7 @@ export const CheckoutDatosStyled = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   
   h2{
     text-align: center;

@@ -6,5 +6,9 @@ export const ContainerCheckout = styled.div`
   flex-wrap: wrap;
   margin-top: 110px;
   padding: 2rem 5rem;
+  @media (max-width: 992px) {
+        flex-direction: column;
+        gap: 5px;
+    }
 `;
 

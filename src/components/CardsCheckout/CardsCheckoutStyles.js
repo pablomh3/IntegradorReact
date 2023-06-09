@@ -18,6 +18,9 @@ export const CardContainerStyled = styled.div`
     border-radius: 16px;
     object-fit: cover;
   }
+  @media (max-width: 992px) {
+        width: 7  0%;
+    }
 `;
 export const CartInfo = styled.div`
 display: flex;

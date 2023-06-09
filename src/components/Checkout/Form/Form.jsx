@@ -5,14 +5,14 @@ import { checkoutValidationSchema } from '../../Formik/ValidationSchema'
 import FormikForm from './FormFormik'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { createOrder } from '../../../axios/axios.orders'
+import { createOrder } from '../../../axios/axios-orders'
 import { clearCart } from '../../../redux/Cart/CartSlice'
 import Loader from '../../Loader/Loader'
 
 const Formulario = (  {cartItems, shippingCost, price}  ) => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    const { currentUser } =useSelector(state => state.user)
+    const { currentUser } = useSelector(state => state.user)
     
   return (
     <CheckoutDatosStyled>
@@ -27,13 +27,13 @@ const Formulario = (  {cartItems, shippingCost, price}  ) => {
               total: price + shippingCost,
               shippingDetails: { ...values },
             };
-           // console.log (orderData.items)
+            console.log (orderData.items)
             try {
               await createOrder(orderData, dispatch, currentUser);
               navigate('/felicitaciones');
               dispatch(clearCart());
             } catch (error) {
-                alert('dale culiado')
+                alert('hubo un error')
             }
           }}
         >
@@ -71,7 +71,7 @@ const Formulario = (  {cartItems, shippingCost, price}  ) => {
                         placeholder='Tu dirección'>
                         Dirección:
                     </FormikForm>
-                    <CheckoutButton disabled={ cartItems.length < 1}> {isSubmitting ? <Loader/> : 'Enviar pedido'} </CheckoutButton>
+                    <CheckoutButton disabled={ cartItems.length < 1}> {isSubmitting ? <Loader/>  : 'Enviar pedido'} </CheckoutButton>
                 </div> 
                 
                 

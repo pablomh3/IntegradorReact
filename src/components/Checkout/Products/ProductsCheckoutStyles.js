@@ -13,6 +13,10 @@ export const ProductosContainerStyled = styled.div`
     color: transparent;
     font-family: 'Press Start 2P', cursive;
   }
+
+  @media (max-width: 992px) {
+        width: 100%;
+    }
 `;
 export const CardsWrapper = styled.div`
   display: flex;
@@ -37,14 +41,6 @@ export const CardsWrapper = styled.div`
     background-color: var(--cyan);
     border: 3px solid var(--negro);
 }
-
-  @media (max-height: 800px) {
-    height: 270px;
-  }
-
-  @media (max-width: 1500px) {
-    width: 100%;
-  }
 
   & img {
     width: 80px;
