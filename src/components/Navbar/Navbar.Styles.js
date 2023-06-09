@@ -12,6 +12,11 @@ top: 0;
 overflow: hidden;
 background-color: #181818;
 
+@media (max-width: 992px){
+
+    gap: 10px;
+}
+
 `
 export const LogoImg = styled.div`
 cursor: pointer;
@@ -23,8 +28,11 @@ transition: all 0-2s;
     transform: scale(1.01);
 }
 @media (max-width: 992px){
-    width: 150px;
+    img{ 
+        width: 150px;
+    } 
 }
+
 `
 export const NavbarUl = styled.ul`
 display: flex;
@@ -56,6 +64,18 @@ a:hover{
     transform: scale(1.0);
     color: var(--blanco);
 }
+
+@media (max-width: 992px){
+    background-color: var(--negro);
+    padding: 8px 5px;
+border-radius: 15px;
+border: 1px solid var(--negro);
+}
+
+@media (max-width: 480px){
+  display: none;
+}
+   
 `
 export const ContainerUserCarrito = styled.div`
 display: flex;
@@ -67,6 +87,19 @@ background-color: var(--negro);
 padding: 12px 15px;
 border-radius: 20px;
 border: 1px solid var(--cyan);
+
+@media (max-width: 992px){
+    gap: 5px;
+    margin-right: none;
+    p{
+        display: none;
+    }
+}
+@media (max-width: 480px){
+    border: 1px solid var(--negro);
+    gap: 0;
+    
+}
 `
 export const IniciaSesion = styled.span `
 font-weight: 800;
@@ -75,9 +108,7 @@ display: flex;
 gap: 5px;
 justify-content: center;
 align-items: center;
-background-clip: text;
-background: white;
--webkit-background-clip: text;
+
 color: var(--magenta);
 transition: all 0.5s;
 cursor: pointer;
@@ -86,6 +117,9 @@ cursor: pointer;
 :hover{
     transform: scale(1.0);
     color: var(--blanco);
+}
+@media (max-width: 480px){
+  font-size: 12px;
 }
 `
 
@@ -107,6 +141,10 @@ cursor: pointer;
 :hover{
     transform: scale(1.0);
     color: var(--blanco);
+}
+
+@media (max-width: 480px){
+  
 }
 `
 export const CarroContainer = styled.div `

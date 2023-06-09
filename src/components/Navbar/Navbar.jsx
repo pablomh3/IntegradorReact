@@ -33,8 +33,8 @@ const dispatch = useDispatch();
                 </> :
                 <>
                 
-                <IniciaSesion onClick={() => navigate('/iniciar-sesion')}> <ImUser size={22}/> <u> Iniciá Sesión </u></IniciaSesion>
-                <Registrarse onClick={() => navigate('/registrarse')}> <ImUserPlus size={17}/>¿No tenés cuenta? <u> Registrate</u> </Registrarse>
+                <IniciaSesion onClick={() => navigate('/iniciar-sesion')}> <ImUser size={20}/> <u> Iniciá Sesión </u></IniciaSesion>
+                <Registrarse onClick={() => navigate('/registrarse')}> <ImUserPlus size={17}/> <p>¿No tenés cuenta?</p>  <u> Registrate</u> </Registrarse>
                 </>
                 }
 

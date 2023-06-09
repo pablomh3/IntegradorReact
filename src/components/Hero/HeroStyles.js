@@ -10,7 +10,10 @@ export const HeroContainer = styled.div `
     padding: 180px 0;
     gap: 30px;
     width: 100%;
-
+    @media (max-width: 992px) {
+        flex-direction: column;
+        gap: 10px;
+    }
 `
 export const HeroData = styled.div `
     display: flex;
@@ -66,10 +69,13 @@ export const HeroFoto = styled.div `
   width: 880px;
   overflow: none;
   justify-content: center;
-
-img{
+  img{
     width: 90%;
 }
+  @media (max-width: 992px) {
+        width: 500px;
+    }
+
 `
 
 

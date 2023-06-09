@@ -3,8 +3,8 @@ import { Formik as FormikContainer, Form as FormikForm } from 'formik';
 
 export const RegistroWrapper = styled.div`
   width: 90vw;
-  max-width: 1600px;
-  padding: 2rem;
+  max-width: 1300px;
+  padding: 2rem 0;
   margin: 0 auto;
 
 `;
@@ -15,6 +15,7 @@ export const RegistroContainer = styled.div`
   align-items: center;
   gap: 40px;
   flex-direction: column;
+  padding: 30px 0;
 `
 export const RegistroTitle = styled.div`
  font-family: 'Press Start 2P', cursive;
@@ -25,7 +26,10 @@ export const RegistroTitle = styled.div`
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  text-align: center;
+ 
+  h2{
+    text-align: center;
+  }
 `
 export const FormularioContainer = styled.div`
  display: flex;

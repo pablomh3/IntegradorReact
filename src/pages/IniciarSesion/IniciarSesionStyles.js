@@ -4,8 +4,9 @@ import { Formik as FormikContainer, Form as FormikForm } from 'formik';
 export const IniciarSesionWrapper = styled.div`
   width: 90vw;
   max-width: 1200px;
-  padding: 2rem;
-  margin: 140px auto;
+  padding: 2rem 0.5rem;
+  margin: 120px auto;
+  min-width: 200px;
 
   h1{
     font-family: 'Noto Sans Mono', monospace;
@@ -15,6 +16,7 @@ export const IniciarSesionWrapper = styled.div`
   color: var(--blanco);
   text-align: center;
 }
+
 `
 export const ContainerIniciarSesion = styled.div`
  display: flex;
@@ -23,6 +25,7 @@ export const ContainerIniciarSesion = styled.div`
   color: var(--blanco);
   flex-direction: column;
   padding: 0 40px 20px;
+  align-items: center;
 h1{
   color: var(--cyan);
 }
