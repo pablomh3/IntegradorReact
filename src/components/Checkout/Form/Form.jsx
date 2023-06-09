@@ -2,18 +2,43 @@ import React from 'react'
 import { CheckoutDatosStyled, Formik, Form, CheckoutButton } from './FormStyles'
 import { CheckoutInitialValues } from '../../Formik/InitialValues'
 import { checkoutValidationSchema } from '../../Formik/ValidationSchema'
-
 import FormikForm from './FormFormik'
+import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import { createOrder } from '../../../axios/axios.orders'
+import { clearCart } from '../../../redux/Cart/CartSlice'
+import Loader from '../../Loader/Loader'
 
-const Formulario = (  {cartItems}  ) => {
+const Formulario = (  {cartItems, shippingCost, price}  ) => {
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+    const { currentUser } =useSelector(state => state.user)
+    
   return (
     <CheckoutDatosStyled>
         <h2>Ingresá tus datos de contacto</h2>
         <Formik initialValues={CheckoutInitialValues}
         validationSchema={checkoutValidationSchema} 
-
-        onSubmit={values => console.log(values)}>
-            <Form>
+        onSubmit={async values => {
+            const orderData = {
+              items: cartItems,
+              price: price,
+              shippingCost,
+              total: price + shippingCost,
+              shippingDetails: { ...values },
+            };
+           // console.log (orderData.items)
+            try {
+              await createOrder(orderData, dispatch, currentUser);
+              navigate('/felicitaciones');
+              dispatch(clearCart());
+            } catch (error) {
+                alert('dale culiado')
+            }
+          }}
+        >
+            {({ isSubmitting}) =>(
+                <Form>
                 <div>
                     <FormikForm htmlFor='nombre'
                         name='name'
@@ -46,15 +71,14 @@ const Formulario = (  {cartItems}  ) => {
                         placeholder='Tu dirección'>
                         Dirección:
                     </FormikForm>
+                    <CheckoutButton disabled={ cartItems.length < 1}> {isSubmitting ? <Loader/> : 'Enviar pedido'} </CheckoutButton>
                 </div> 
-                    
-
                 
-                
-                <CheckoutButton disabled={ cartItems.length < 1}> Enviar pedido</CheckoutButton>
                 
                
+               
             </Form>
+            )}
         </Formik>
     </CheckoutDatosStyled>
   )

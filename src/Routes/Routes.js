@@ -5,6 +5,7 @@ import Registro from '../pages/Registro/Registro';
 import NotFound from '../pages/NotFound/NotFound';
 import Checkout from '../pages/Checkout/Checkout';
 import ProtectedRoute from '../components/ProtectedRoute/ProtectedRoute';
+import Felicitaciones from '../pages/Felicitaciones/Felicitaciones';
 
 
 
@@ -15,6 +16,7 @@ function Routes  () {
                 <Route path='/' element={<Main/>} />
                 <Route path='/iniciar-sesion' element={<IniciarSesion/>} />
                 <Route path='/registrarse' element={<Registro/>} />
+                <Route path='/felicitaciones' element={<Felicitaciones />} />
                 <Route path='/checkout' element={<ProtectedRoute redirectTo='/registrarse'>
                     <Checkout/>
                 </ProtectedRoute> }/>

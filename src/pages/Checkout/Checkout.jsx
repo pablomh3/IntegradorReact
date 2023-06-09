@@ -12,9 +12,9 @@ const Checkout = () => {
       );
   return (
     <ContainerCheckout>
-        <Formulario cartItems = {cartItems} shippingCost = {shippingCost} totalPrice ={totalPrice} >
+        <Formulario cartItems = {cartItems} shippingCost = {shippingCost} price ={totalPrice} >
         </Formulario>
-        <ProductsCheckout cartItems = {cartItems} shippingCost = {shippingCost} totalPrice ={totalPrice}>
+        <ProductsCheckout cartItems = {cartItems} shippingCost = {shippingCost} price ={totalPrice}>
 
         </ProductsCheckout>
     </ContainerCheckout>

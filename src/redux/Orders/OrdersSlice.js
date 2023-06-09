@@ -6,7 +6,7 @@ const initialState = {
     error: null,
 }
 
-const orderSlice = createSlice({
+const ordersSlice = createSlice({
     name: 'orders',
     initialState,
     reducers:{
@@ -24,6 +24,38 @@ const orderSlice = createSlice({
                 error: null,
                 orders:[...action.payload]
             }
-        }
+        },
+
+        fetchOrderFail: (state, action) =>{
+            return{
+                ...state,
+                loading: false,
+                error: action.payload,
+            
+            }
+        },
+        fetchOrderStart: (state) =>{
+            return{
+                ...state,
+                loading: true,
+            }
+        },
+        clearError: (state) =>{
+            return{
+                ...state,
+                error: null,
+            }
+        },
+        clearOrders: (state) =>{
+            return{
+                ...state,
+                orders: null,
+            }
+        },
     }
 })
+
+export const { createOrderFail, fetchOrderSuccess, fetchOrderFail, fetchOrderStart, clearError, clearOrders
+} = ordersSlice.actions
+
+export default ordersSlice.reducer

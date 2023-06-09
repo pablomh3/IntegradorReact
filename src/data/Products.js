@@ -4,6 +4,7 @@ export const products =  [
     name: 'Auriculares Redragon Zeus H510',
     price: 15000,
     category: 'Perifericos',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/auris.jpg',
 },
 {
@@ -11,6 +12,7 @@ export const products =  [
     name: 'Fuente Redragon Gc-ps010 850w 80 Plus Gold',
     price: 24690,
     category: 'Componentes',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/fuente1.jpg',
 },
 {
@@ -18,6 +20,7 @@ export const products =  [
     name: 'Fuente Evga 500w 80 Plus White W2',
     price: 12540,
     category: 'Componentes',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/fuente2.jpg',
 },
 {
@@ -25,6 +28,7 @@ export const products =  [
     name: 'Joystick Play Station 5',
     price: 23800,
     category: 'Consolas',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/joystick.jpg',
 },
 {
@@ -32,6 +36,7 @@ export const products =  [
     name: 'Joystick PS4',
     price: 12700,
     category: 'Consolas',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/joystickps4.jpg',
 },
 {
@@ -39,6 +44,7 @@ export const products =  [
     name: 'Monitor 24" ViewSonic 165 hz',
     price: 90910,
     category: 'Perifericos',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/monitor.jpg',
 },
 {
@@ -46,6 +52,7 @@ export const products =  [
     name: 'Mouse Redragon Pro M808',
     price: 9500,
     category: 'Perifericos',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/mouse.jpg',
 },
 {
@@ -53,6 +60,7 @@ export const products =  [
     name: 'Mouse Pad Game Pro Gp-6004 Rgb 35x80',
     price: 4700,
     category: 'Perifericos',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/mousepad.jpg',
 },
 {
@@ -60,6 +68,7 @@ export const products =  [
     name: 'Notebook Aorus Xd 17.3" fhd 300hz | i7 | Rtx 3070 | Ram 16gb | Ssd 512gb',
     price: 545000,
     category: 'PC y Notebooks',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/notebookaourus.jpg',
 },
 {
@@ -67,6 +76,7 @@ export const products =  [
     name: 'PC Gamer Alta Gama',
     price: 310000,
     category: 'PC y Notebooks',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/pcalta.jpg',
 },
 {
@@ -74,6 +84,7 @@ export const products =  [
     name: 'PC Gamer Baja Gama',
     price: 120200,
     category: 'PC y Notebooks',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/pcbaja.jpeg',
 },
 {
@@ -81,6 +92,7 @@ export const products =  [
     name: 'PC Gamer Media Gama',
     price: 202700,
     category: 'PC y Notebooks',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/pcmedia.jpg',
 },
 {
@@ -88,6 +100,7 @@ export const products =  [
     name: 'Placa De Video Geforce Rtx 3090 Evga',
     price: 495000,
     category: 'Componentes',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/placa.jpg',
 },
 {
@@ -95,6 +108,7 @@ export const products =  [
     name: 'Placa De Video Geforce Gtx 1660 Zotac',
     price: 96000,
     category: 'Componentes',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/placa2.jpg',
 },
 {
@@ -102,6 +116,7 @@ export const products =  [
     name: 'Placa De Video Msi Gt 730',
     price: 25000,
     category: 'Componentes',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/placa3.jpg',
 },
 {
@@ -109,6 +124,7 @@ export const products =  [
     name: 'Play Station 4 500gb',
     price: 88000,
     category: 'Consolas',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/ps4.jpg',
 },
 {
@@ -116,6 +132,7 @@ export const products =  [
     name: 'Play Station 5 1TB',
     price: 269000,
     category: 'Consolas',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/ps5.jpg',
 },
 {
@@ -123,6 +140,7 @@ export const products =  [
     name: 'Gift Card Play Station US$20',
     price: 7100,
     category: 'Consolas',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/psstore.jpg',
 },
 {
@@ -130,6 +148,7 @@ export const products =  [
     name: 'Memoria RAM Ddr4 16gb 3200mhz Corsair',
     price: 15000,
     category: 'Componentes',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/ram.jpg',
 },
 {
@@ -137,6 +156,7 @@ export const products =  [
     name: 'Memoria Ram Sodimm Ddr4 Hikvision Neo 8gb 2666mhz',
     price: 10700,
     category: 'Componentes',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/ram2.jpg',
 },
 {
@@ -144,6 +164,7 @@ export const products =  [
     name: 'Disco sólido 1TB Aorus M2 Nvme',
     price: 43700,
     category: 'Componentes',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/ssd.jpg',
 },
 {
@@ -151,6 +172,7 @@ export const products =  [
     name: 'Stream Deck Elgato Mk.2 15 White',
     price: 48800,
     category: 'Perifericos',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/streamdeck.jpg',
 },
 {
@@ -158,6 +180,7 @@ export const products =  [
     name: 'Tableta Digitalizadora Xp-pen Deco Mini7 Wireless',
     price: 16790,
     category: 'Perifericos',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/tableta.jpg',
 },
 {
@@ -165,6 +188,7 @@ export const products =  [
     name: 'Teclado Mecanico Game Pro Gk-70m Rgb Black',
     price: 7700,
     category: 'Perifericos',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/tecladomecanico.jpg',
 },
 {
@@ -172,6 +196,7 @@ export const products =  [
     name: 'Webcam Redragon Gw600 Fobos',
     price: 6520,
     category: 'Perifericos',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/webcam.jpg',
 },
 {
@@ -179,6 +204,7 @@ export const products =  [
     name: 'Xbox Game Pass',
     price: 3600,
     category: 'Consolas',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/xboxcard.jpg',
 },
 {
@@ -186,6 +212,7 @@ export const products =  [
     name: 'Xbox Series S',
     price: 128000,
     category: 'Consolas',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/xboxseriess.jpg',
 },
 {
@@ -193,6 +220,7 @@ export const products =  [
     name: 'Xbox Series X',
     price: 240000,
     category: 'Consolas',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/xboxseriesx.jpg'
 },
 {
@@ -200,6 +228,7 @@ export const products =  [
     name: 'Procesador Ryzen 5 5600g',
     price: 69400,
     category: 'Componentes',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/amd.jpg',
 },
 {
@@ -207,6 +236,7 @@ export const products =  [
     name: 'Mother Am4 Msi A520m-a Pro',
     price: 19500,
     category: 'Componentes',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/motheramd.jpg',
 },
 {
@@ -214,6 +244,7 @@ export const products =  [
     name: 'Mother Msi Pro H610m-b Ddr4',
     price: 22600,
     category: 'Componentes',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/motherintel.jpg',
 },
 {
@@ -221,6 +252,7 @@ export const products =  [
     name: 'Procesador Intel Core I5 12400f ',
     price: 67900,
     category: 'Componentes',
+    desc: '',
     img: 'https://integradorjavascript-taupe.vercel.app/img/intel.jpg',
 },
 ];

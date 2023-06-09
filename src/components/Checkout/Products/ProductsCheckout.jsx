@@ -3,7 +3,7 @@ import { CardsWrapper, Divider, ProductosContainerStyled, SubTotalDivider, Total
 import CardsCheckout from '../../CardsCheckout/CardsCheckout'
 
 
-const ProductsCheckout = ({ cartItems, shippingCost, totalPrice }) => {
+const ProductsCheckout = ({ cartItems, shippingCost, price }) => {
 
   return (
     <ProductosContainerStyled>
@@ -23,7 +23,7 @@ const ProductsCheckout = ({ cartItems, shippingCost, totalPrice }) => {
             <TotalContainer>
                 <SubTotalDivider>
                     <p>Subtotal:</p>
-                    <span>${ totalPrice }</span>
+                    <span>${ price }</span>
                 </SubTotalDivider>
                 <SubTotalDivider>
                 <p>Envío:</p>
@@ -31,7 +31,7 @@ const ProductsCheckout = ({ cartItems, shippingCost, totalPrice }) => {
                 </SubTotalDivider>
                 <TotalDivider>
                     <p>Total:</p>
-                    <span> ${totalPrice + shippingCost} </span>
+                    <span> ${price + shippingCost} </span>
                 </TotalDivider>
            
             </TotalContainer> : ''}
