@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 export const LoaderContainer = styled.div`
   display: flex;
   justify-content: center;
+  
   width: calc(151px - 1.5rem * 2);
   margin: 0 auto;
 `;

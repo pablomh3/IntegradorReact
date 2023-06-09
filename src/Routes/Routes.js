@@ -6,6 +6,7 @@ import NotFound from '../pages/NotFound/NotFound';
 import Checkout from '../pages/Checkout/Checkout';
 import ProtectedRoute from '../components/ProtectedRoute/ProtectedRoute';
 import Felicitaciones from '../pages/Felicitaciones/Felicitaciones';
+import MisOrdenes from '../pages/Ordenes/MisOrdenes';
 
 
 
@@ -17,6 +18,7 @@ function Routes  () {
                 <Route path='/iniciar-sesion' element={<IniciarSesion/>} />
                 <Route path='/registrarse' element={<Registro/>} />
                 <Route path='/felicitaciones' element={<Felicitaciones />} />
+                <Route path='/mis-ordenes' element={<MisOrdenes />} />
                 <Route path='/checkout' element={<ProtectedRoute redirectTo='/registrarse'>
                     <Checkout/>
                 </ProtectedRoute> }/>
