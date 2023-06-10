@@ -15,6 +15,11 @@ export const HeroContainer = styled.div `
         gap: 10px;
         padding: 130px 0;
     }
+    @media (max-width: 576px) {
+        flex-direction: column;
+        gap: 0px;
+        padding: 130px 0;
+    }
 `
 export const HeroData = styled.div `
     display: flex;
@@ -28,7 +33,7 @@ export const HeroData = styled.div `
 
   @media (max-width: 992px) {
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
         width: 100%;
     }
 `
