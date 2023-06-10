@@ -116,7 +116,7 @@ justify-content: center;
 @media (max-width: 992px){
     gap: 5px;
     margin-right: none;
-    width: 160px;
+    width: 240px;
     
     p{
         display: none;

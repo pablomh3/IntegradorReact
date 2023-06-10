@@ -18,23 +18,27 @@ export const ProductsContainer = styled.div `
 `
 
 export const ProductsTitle = styled.div`
- display: flex;
+  display: flex;
   font-family: 'Press Start 2P', cursive;
   font-size: 22px;
   font-weight: 800;
+  align-items: center;
+  
   background: linear-gradient(to top, var(--magenta), var(--cyan));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   gap: 5px;
+  text-align: center;
   img{
-    width: 22px;
+    width: 22px;  
   }
   @media (max-width: 992px){
-    font-size: 19px;
-    
+    font-size: 20px;
+    gap: 0px;
     img{ 
         width: 18px;
+        height: 18px;
     } 
 }
 
@@ -122,7 +126,7 @@ img{
   }
 }
 @media (max-width: 576px){
-  width: 170px;
+  width: 110px;
   height: 300px;
   gap: 1px;
   img{
