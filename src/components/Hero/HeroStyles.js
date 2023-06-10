@@ -13,6 +13,7 @@ export const HeroContainer = styled.div `
     @media (max-width: 992px) {
         flex-direction: column;
         gap: 10px;
+        padding: 130px 0;
     }
 `
 export const HeroData = styled.div `
@@ -24,6 +25,12 @@ export const HeroData = styled.div `
   text-align:center;
   width: 70%;
   flex-wrap: wrap;
+
+  @media (max-width: 992px) {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
 `
 
 export const H1Hero = styled.div `
@@ -32,6 +39,8 @@ display: flex;
  font-size: 15px; 
  line-height: 25px;
  flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
 
 h1{
   font-family: 'Press Start 2P', cursive;
@@ -43,7 +52,16 @@ h1{
   color: transparent;
   text-align: center;
   line-height: 60px;
+  @media (max-width: 992px) {
+    font-size: 40px;
+    }
+    @media (max-width: 576px) {
+    font-size: 35px;
+    }
 }
+
+
+
 `
 
 export const H3Hero = styled.div`
@@ -51,6 +69,13 @@ export const H3Hero = styled.div`
  padding: 0 20px;
  font-size: 15px; 
  line-height: 25px; 
+ @media (max-width: 992px) {
+    font-size: 14px;
+    }
+    @media (max-width: 576px) {
+    font-size: 13px;
+    }
+
  span{
     background: linear-gradient(to left, #4c96d7, #8a25b1);
   font-family: 'Geostar Fill', cursive;
@@ -74,6 +99,9 @@ export const HeroFoto = styled.div `
 }
   @media (max-width: 992px) {
         width: 500px;
+    }
+    @media (max-width: 992px) {
+        width: 400px;
     }
 
 `

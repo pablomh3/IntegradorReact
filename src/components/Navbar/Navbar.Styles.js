@@ -14,9 +14,14 @@ background-color: #181818;
 
 @media (max-width: 992px){
 
-    gap: 10px;
+    gap: 20px;
 }
 
+@media (max-width: 576px){
+
+gap: 10px;
+
+}
 `
 export const LogoImg = styled.div`
 cursor: pointer;
@@ -32,6 +37,21 @@ transition: all 0-2s;
         width: 150px;
     } 
 }
+@media (max-width: 576px){
+    img{ 
+        display: none;
+    } 
+}
+`
+export const LogoMini = styled.div`
+img{
+    display: none
+} 
+@media (max-width: 576px){
+    img{ 
+        display: flex;
+        width: 50px;
+    } }
 
 `
 export const NavbarUl = styled.ul`
@@ -41,6 +61,7 @@ gap: 100px;
 font-family: 'Geostar Fill', cursive;
 font-size: 18px; 
 width: 50%;
+
 `
 export const NavbarLi = styled.div`
 background-color: var(--negro);
@@ -72,7 +93,7 @@ border-radius: 15px;
 border: 1px solid var(--negro);
 }
 
-@media (max-width: 480px){
+@media (max-width: 576px){
   display: none;
 }
    
@@ -80,25 +101,34 @@ border: 1px solid var(--negro);
 export const ContainerUserCarrito = styled.div`
 display: flex;
 gap: 10px;
-margin-right: 20px;
+
 flex-direction: column;
 cursor: pointer;
 background-color: var(--negro);
 padding: 12px 15px;
 border-radius: 20px;
 border: 1px solid var(--cyan);
+margin: 10px 0;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
 
 @media (max-width: 992px){
     gap: 5px;
     margin-right: none;
+    width: 160px;
+    
     p{
         display: none;
     }
 }
-@media (max-width: 480px){
-    border: 1px solid var(--negro);
-    gap: 0;
-    
+@media (max-width: 576px){
+    border: 1px solid #181818;
+    margin: 0;    
+    min-width: 230px;
+   
+    background-color: #181818;
+    gap: 10px;
 }
 `
 export const IniciaSesion = styled.span `
@@ -118,8 +148,13 @@ cursor: pointer;
     transform: scale(1.0);
     color: var(--blanco);
 }
-@media (max-width: 480px){
-  font-size: 12px;
+@media (max-width: 992px){
+  font-size: 14px;
+}
+
+@media (max-width: 576px){
+  font-size: 13px;
+  gap: 7px;
 }
 `
 
@@ -142,28 +177,42 @@ cursor: pointer;
     transform: scale(1.0);
     color: var(--blanco);
 }
-
-@media (max-width: 480px){
+@media (max-width: 992px){
+  font-size: 12px;
   
+}
+@media (max-width: 576px){
+    font-size: 11px;
+  gap: 7px;
 }
 `
 export const CarroContainer = styled.div `
+display: flex;
 padding: 13px 20px;
-border-radius: 10px;
+border-radius: 13px;
 transition: all 0.6s;
 background-color: var(--negro);
-width: 20px;
+width: 25px;
 justify-content: center;
 align-items: center;
 border: 1px solid var(--magenta);
 color: var(--cyan);
 cursor: pointer;
-
+height: 30px;
 :hover{
     background-color: var(--magenta);
     color: var(--cyan);
     transform: scale(1.0);
     font-weight: 800;
    border: 1px solid var(--cyan);
+}
+@media (max-width: 992px){
+  width: 20px;
+  margin-right: 10px;
+  height: 20px;
+}
+@media (max-width: 576px){
+  width: 19px;
+  margin-right: 30px;
 }
 `

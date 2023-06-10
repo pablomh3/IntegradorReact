@@ -5,5 +5,8 @@ export const MainWrapper = styled.div`
   max-width: 1600px;
   padding: 2rem;
   margin: 0 auto;
-
+  
+@media (max-width: 576px){
+    padding: 1rem;
+}
 `;

@@ -6,4 +6,8 @@ export const LayoutWrapper = styled.div `
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    @media (max-width: 480px){
+
+    padding-right: 90px;
+}
 `
