@@ -19,14 +19,12 @@ const dispatch = useDispatch();
             <LogoImg>
                 <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logo-nombre1.png" alt="logo" /></Link>
             </LogoImg>
-            <LogoMini>
-                <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logosolo.png" alt="logo" /></Link>
-            </LogoMini>
             <NavbarUl>
                <NavbarLi> <Link to='/'> Home </Link>  </NavbarLi> 
                
               
             </NavbarUl>
+            
             <ContainerUserCarrito>
                 { currentUser ? 
                 <>
@@ -34,15 +32,14 @@ const dispatch = useDispatch();
                     <Registrarse onClick={() => {dispatch(setCurrentUser(null))}}>  <u>Cerrar sesión </u></Registrarse>
                 </> :
                 <>
-                
                 <IniciaSesion onClick={() => navigate('/iniciar-sesion')}> <ImUser size={18}/> <u> Iniciá Sesión </u></IniciaSesion>
                 <Registrarse onClick={() => navigate('/registrarse')}> <ImUserPlus size={16}/> <p>¿No tenés cuenta?</p>  <u> Registrate</u> </Registrarse>
                 </>
                 }
-
-            
-           
             </ContainerUserCarrito> 
+            <LogoMini>
+                <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logosolo.png" alt="logo" /></Link>
+            </LogoMini>
             <CarritoContainer/>
             
         </NavbarContainer>

@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 export const LoaderContainer = styled.div`
   display: flex;
   justify-content: center;
-  
+  align-items: center;
+  align-self: center;
   width: calc(151px - 1.5rem * 2);
   margin: 0 auto;
 `;
@@ -15,6 +16,6 @@ export const LoaderStyled = styled(motion.div)`
   height: 20px;
   border-radius: 50%;
   border-left-color: transparent;
-
+  margin: 0 auto;
   ${({ args }) => css({ ...args })}
 `;

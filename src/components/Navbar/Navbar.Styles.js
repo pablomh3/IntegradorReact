@@ -17,9 +17,8 @@ background-color: #181818;
     gap: 20px;
 }
 
-@media (max-width: 576px){
+@media (max-width: 476px){
 
-gap: 10px;
 
 }
 `
@@ -37,7 +36,7 @@ transition: all 0-2s;
         width: 150px;
     } 
 }
-@media (max-width: 576px){
+@media (max-width: 476px){
     img{ 
         display: none;
     } 
@@ -47,7 +46,7 @@ export const LogoMini = styled.div`
 img{
     display: none
 } 
-@media (max-width: 576px){
+@media (max-width: 476px){
     img{ 
         display: flex;
         width: 50px;
@@ -80,7 +79,6 @@ a{
 
 }
 
-
 a:hover{
     transform: scale(1.0);
     color: var(--blanco);
@@ -93,7 +91,7 @@ border-radius: 15px;
 border: 1px solid var(--negro);
 }
 
-@media (max-width: 576px){
+@media (max-width: 476px){
   display: none;
 }
    
@@ -122,7 +120,8 @@ justify-content: center;
         display: none;
     }
 }
-@media (max-width: 576px){
+@media (max-width: 476px){
+    display: none;
     border: 1px solid #181818;
     margin: 0;    
     min-width: 230px;
@@ -152,7 +151,7 @@ cursor: pointer;
   font-size: 14px;
 }
 
-@media (max-width: 576px){
+@media (max-width: 476px){
   font-size: 13px;
   gap: 7px;
 }
@@ -181,7 +180,7 @@ cursor: pointer;
   font-size: 12px;
   
 }
-@media (max-width: 576px){
+@media (max-width: 476px){
     font-size: 11px;
   gap: 7px;
 }
@@ -211,7 +210,7 @@ height: 30px;
   margin-right: 10px;
   height: 20px;
 }
-@media (max-width: 576px){
+@media (max-width: 476px){
   width: 19px;
   margin-right: 30px;
 }

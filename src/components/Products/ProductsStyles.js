@@ -11,7 +11,7 @@ export const ProductsContainer = styled.div `
     gap: 30px;
     padding: 0 20px;
 }
-@media (max-width: 576px){
+@media (max-width: 476px){
   
   
 }
@@ -125,7 +125,7 @@ img{
     width: 100px;
   }
 }
-@media (max-width: 576px){
+@media (max-width: 476px){
   width: 110px;
   height: 300px;
   gap: 1px;
@@ -158,7 +158,7 @@ export const CardPrecio = styled.div`
   -webkit-background-clip: text;
   color: transparent;
    overflow-y: hidden;
-   @media (max-width: 576px){
+   @media (max-width: 476px){
   font-size: 16px;
 }
 `
@@ -181,7 +181,7 @@ background: linear-gradient(to left, #4c96d7, #8a25b1);
 
     font-size: 13px;
   }
-  @media (max-width: 576px){
+  @media (max-width: 476px){
     
     font-size: 13px;
   }
