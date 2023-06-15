@@ -15,7 +15,7 @@ export const HeroContainer = styled.div `
         gap: 10px;
         padding: 130px 0;
     }
-    @media (max-width: 476px) {
+    @media (max-width: 400px) {
         flex-direction: column;
         gap: 0px;
         padding: 130px 0;
@@ -60,7 +60,7 @@ h1{
   @media (max-width: 992px) {
     font-size: 40px;
     }
-    @media (max-width: 476px) {
+    @media (max-width: 400px) {
     font-size: 35px;
     }
 }
@@ -77,7 +77,7 @@ export const H3Hero = styled.div`
  @media (max-width: 992px) {
     font-size: 14px;
     }
-    @media (max-width: 476px) {
+    @media (max-width: 400px) {
     font-size: 13px;
     }
 
