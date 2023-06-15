@@ -9,6 +9,13 @@ border-top: 1px solid var(--magenta);
 padding: 20px 0;
 align-items: center;
 background-color: #181818;
+width: 100%;
+@media (max-width: 476px){
+    display: flex;
+    img{ 
+        width: 50px;
+        
+    } }
 `
 export const FooterImg = styled.div `
 display: flex;

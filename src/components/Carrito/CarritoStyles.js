@@ -33,6 +33,10 @@ h2{
 p{
     align-self: center;
 }
+@media (max-width: 476px){
+ min-width: 320px;
+  
+}
 `
 
 export const ContainerProducts = styled.div`

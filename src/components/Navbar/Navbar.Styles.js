@@ -43,13 +43,13 @@ transition: all 0-2s;
 }
 `
 export const LogoMini = styled.div`
-img{
-    display: none
-} 
+display: none;
+
 @media (max-width: 476px){
+    display: flex;
     img{ 
-        display: flex;
         width: 50px;
+        
     } }
 
 `
