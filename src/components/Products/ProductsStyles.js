@@ -23,7 +23,6 @@ export const ProductsTitle = styled.div`
   font-size: 22px;
   font-weight: 800;
   align-items: center;
-  
   background: linear-gradient(to top, var(--magenta), var(--cyan));
   background-clip: text;
   -webkit-background-clip: text;
@@ -41,6 +40,12 @@ export const ProductsTitle = styled.div`
         height: 18px;
     } 
 }
+@media (max-width: 460px) {
+    img{
+      display: none;
+    }
+    
+    }
 
 
 `
@@ -54,6 +59,10 @@ export const ProductsCategories = styled.div`
   flex-wrap: wrap;
   @media (max-width: 992px){
     gap: 15px;
+    }
+  @media (max-width: 460px) {
+    gap: 10px;
+    
     }
 `
 
@@ -71,8 +80,11 @@ export const ProductsCategory = styled.button`
   color: var(--magenta);
   font-weight: 700;
   @media (max-width: 992px){
-    
     font-size: 16px;
+    }
+    @media (max-width: 460px) {
+    font-size: 13px;
+    
     }
   }
 
@@ -126,12 +138,12 @@ img{
   }
 }
 @media (max-width: 476px){
-  width: 110px;
-  height: 300px;
+  width: 90px;
+  height: 250px;
   gap: 1px;
   img{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
   }
 }
 `
@@ -145,8 +157,12 @@ export const CardH3 = styled.div`
   h3{
     font-size: 16px;
   }
-  
 }
+@media (max-width: 476px){
+    h3{
+      font-size: 13px;
+    }
+  }
 
 `
 export const CardPrecio = styled.div`
@@ -159,7 +175,7 @@ export const CardPrecio = styled.div`
   color: transparent;
    overflow-y: hidden;
    @media (max-width: 476px){
-  font-size: 16px;
+  font-size: 14px;
 }
 `
 export const CardButtonContainter = styled.div`
@@ -182,8 +198,8 @@ background: linear-gradient(to left, #4c96d7, #8a25b1);
     font-size: 13px;
   }
   @media (max-width: 476px){
-    
-    font-size: 13px;
+    padding: 3px 5px;
+    font-size: 11px;
   }
 `
 export const VerMas = styled.div`

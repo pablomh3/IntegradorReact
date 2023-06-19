@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion';
 
-export const Cart = styled.div`
+export const Cart = styled(motion.div)`
     display: flex;
     position: fixed;
     top: 110px;
@@ -15,9 +16,8 @@ export const Cart = styled.div`
     height: calc(100vh - 180px);
     overflow: scroll;
     z-index: 2;
-    width: 0px;
-    min-width: 365px;
-    transition: all 0.3s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+    width: 360px;
+    height: 86%;
     ::-webkit-scrollbar{
         display: none;
     }
@@ -34,8 +34,12 @@ p{
     align-self: center;
 }
 @media (max-width: 476px){
- min-width: 320px;
-  
+    padding: 10px 10px 10px 30px;
+ width: 210px;
+ h2{
+    font-size: 20px;
+    text-align: center;
+ }
 }
 `
 
@@ -55,6 +59,9 @@ overflow-x: hidden;
     background-color: var(--cyan);
     border: 3px solid var(--azul);
 }
+@media (max-width: 476px){
+gap: 10px;
+}
 `
 export const CartContainer = styled.div`
    display: flex;
@@ -70,6 +77,16 @@ export const CartContainer = styled.div`
         width: 65px;
         height: 65px;
     }
+    @media (max-width: 476px){
+        max-width: 200px;
+        gap: 0;
+        padding: 6px;
+        flex-direction: column;
+        img{
+            width: 40px;
+            height: 40px;
+        }
+}
 `
 export const CartInfo = styled.div`
 display: flex;
@@ -87,7 +104,14 @@ p{
     font-weight: 800;
     font-size: 18px;
 }
-
+@media (max-width: 476px){
+    h3{
+        font-size: 13px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
 `
 export const HandleQuantityContainer = styled.div`
 display: flex;
@@ -96,6 +120,13 @@ display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+  @media (max-width: 476px){
+    gap: 0;
+    justify-content: center;
+    padding: 0;
+    flex-direction: column;
+    padding: 0 2px;
+  }
 `
 export const HandleQuantity = styled.div`
  background: linear-gradient(to left, #4c96d7, #8a25b1);
@@ -109,6 +140,10 @@ export const HandleQuantity = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 476px){
+    gap: 6px;
+    width: 50px;
+  }
 
 `
 export const Divider = styled.div`
@@ -130,6 +165,15 @@ span{
     font-weight: 600;
     font-size: 20px;
 }
+@media (max-width: 476px){
+    gap: 10px;
+    p{
+        font-size: 18px;
+    }
+    span{
+        font-size: 18px;
+    }
+  }
 `
 
 export const ButtonComprar = styled.button`
@@ -155,6 +199,10 @@ export const ButtonComprar = styled.button`
     background: var(--azul);
     color: var(--blanco);
   }
+  @media (max-width: 476px){
+    font-size: 14px;
+    padding: 13px 20px;
+  }
 `
 
 export const ButtonVaciar = styled.button`
@@ -179,5 +227,8 @@ export const ButtonVaciar = styled.button`
     background: var(--azul);
     color: var(--blanco);
   }
-
+  @media (max-width: 476px){
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 `

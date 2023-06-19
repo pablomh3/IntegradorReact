@@ -33,7 +33,7 @@ export const HeroData = styled.div `
 
   @media (max-width: 992px) {
         flex-direction: column;
-        gap: 5px;
+        gap: 0;
         width: 100%;
     }
 `
@@ -60,8 +60,9 @@ h1{
   @media (max-width: 992px) {
     font-size: 40px;
     }
-    @media (max-width: 400px) {
-    font-size: 35px;
+    @media (max-width: 460px) {
+    font-size: 30px;
+    padding: 0;
     }
 }
 
@@ -77,8 +78,8 @@ export const H3Hero = styled.div`
  @media (max-width: 992px) {
     font-size: 14px;
     }
-    @media (max-width: 400px) {
-    font-size: 13px;
+    @media (max-width: 460px) {
+    font-size: 12px;
     }
 
  span{
@@ -104,9 +105,15 @@ export const HeroFoto = styled.div `
 }
   @media (max-width: 992px) {
         width: 500px;
+        img{
+    width: 100%;
+}
     }
-    @media (max-width: 992px) {
+    @media (max-width: 460px) {
         width: 400px;
+        img{
+      width: 70%;
+}
     }
 
 `
