@@ -8,11 +8,11 @@ export const ProductsContainer = styled.div `
   align-items: center;
   padding: 0 50px;
   @media (max-width: 992px){
-    gap: 30px;
+    gap: 40px;
     padding: 0 20px;
 }
 @media (max-width: 476px){
-  
+  gap: 30px;
   
 }
 `
@@ -34,7 +34,7 @@ export const ProductsTitle = styled.div`
   }
   @media (max-width: 992px){
     font-size: 20px;
-    gap: 0px;
+    gap: 2px;
     img{ 
         width: 18px;
         height: 18px;
@@ -58,7 +58,7 @@ export const ProductsCategories = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   @media (max-width: 992px){
-    gap: 15px;
+    gap: 20px;
     }
   @media (max-width: 460px) {
     gap: 10px;

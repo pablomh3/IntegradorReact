@@ -6,19 +6,18 @@ export const HeroContainer = styled.div `
     align-content: center;
     align-items:center;
     color: var(--blanco);
-    border-radius: 2%;
     padding: 180px 0;
     gap: 30px;
     width: 100%;
     @media (max-width: 992px) {
         flex-direction: column;
         gap: 10px;
-        padding: 130px 0;
+        padding: 130px 0px 70px 0px;;
     }
     @media (max-width: 400px) {
         flex-direction: column;
         gap: 0px;
-        padding: 130px 0;
+        padding: 100px 0px 70px 0px;
     }
 `
 export const HeroData = styled.div `
