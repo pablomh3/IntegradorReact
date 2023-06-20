@@ -34,8 +34,9 @@ p{
     align-self: center;
 }
 @media (max-width: 476px){
-    padding: 10px 10px 10px 30px;
- width: 210px;
+    padding: 10px 10px 20px 30px;
+    width: 210px;
+    height: 100%;
  h2{
     font-size: 20px;
     text-align: center;
