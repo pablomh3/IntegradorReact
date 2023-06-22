@@ -27,4 +27,15 @@ h2{
     color: white;
 }
 }
-`
+@media (max-width: 576px){
+    padding: 0;
+    max-width: 390px;
+    width: 100%;
+    h1{
+      font-size: 50px;
+    }
+    h2{
+      font-size: 30px;
+    }
+}
+`;

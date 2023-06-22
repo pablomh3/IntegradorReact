@@ -6,7 +6,11 @@ export const RegistroWrapper = styled.div`
   max-width: 1300px;
   padding: 2rem 0;
   margin: 0 auto;
-
+  @media (max-width: 576px){
+    padding: 0;
+    max-width: 340px;
+    width: 100%;
+}
 `;
 
 export const RegistroContainer = styled.div`
@@ -30,6 +34,9 @@ export const RegistroTitle = styled.div`
   h2{
     text-align: center;
   }
+  @media (max-width: 576px){
+    font-size: 15px;
+}
 `
 export const FormularioContainer = styled.div`
  display: flex;
@@ -43,6 +50,14 @@ export const FormularioContainer = styled.div`
   h2{
     color: var(--cyan);
   }
+  @media (max-width: 576px){
+    padding: 40px 0;
+    width: 350px;
+    h2{
+      font-size: 15px;
+      text-align: center;
+    }
+}
 `
 export const Formik = styled(FormikContainer)`
   display: flex;

@@ -19,7 +19,7 @@ export const CardContainerStyled = styled.div`
     object-fit: cover;
   }
   @media (max-width: 992px) {
-        width: 7  0%;
+        width: 70%;
     }
 `;
 export const CartInfo = styled.div`

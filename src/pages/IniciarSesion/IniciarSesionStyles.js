@@ -4,7 +4,7 @@ import { Formik as FormikContainer, Form as FormikForm } from 'formik';
 export const IniciarSesionWrapper = styled.div`
   width: 90vw;
   max-width: 1200px;
-  padding: 2rem 0.5rem;
+  padding: 2rem;
   margin: 120px auto;
   min-width: 200px;
 
@@ -15,6 +15,14 @@ export const IniciarSesionWrapper = styled.div`
   font-weight: 800;
   color: var(--blanco);
   text-align: center;
+}
+@media (max-width: 576px){
+    padding: 20px;
+    max-width: 330px;
+    width: 100%;
+    h1{
+      font-size: 23px;
+    }
 }
 
 `
@@ -50,6 +58,9 @@ export const FormText = styled.p`
 color: var(--blanco);
 font-size: 16px;
 font-weight: 600;
+@media (max-width: 576px){
+    font-size: 13px;
+}
 `
 export const LogInInput = styled.input`
   padding: 0 5px;
@@ -62,6 +73,9 @@ export const LogInInput = styled.input`
    color: var(--magenta);
    opacity: 0.5; 
   }
+  @media (max-width: 576px){
+   width: 250px;
+}
  `
 export const ErrorMessageStyled = styled.p`
  
@@ -69,7 +83,9 @@ margin: 0;
 margin-top: 2px;
 color: #fb103d;
 font-size: 14px;
-
+@media (max-width: 576px){
+    font-size: 12px;
+}
 `
 export const LogInContainer = styled.div`
 display: flex;
@@ -107,6 +123,9 @@ font-size: 14px;
   u:hover{
     color: var(--blanco);
   }
+  @media (max-width: 576px){
+    font-size: 12px;
+}
   `
   export const LogInButton = styled.button`
   padding-top: 60px;
