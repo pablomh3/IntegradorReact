@@ -17,7 +17,7 @@ background-color: #181818;
     gap: 20px;
 }
 
-@media (max-width: 476px){
+@media (max-width: 576px){
 
 
 }
@@ -26,17 +26,17 @@ export const LogoImg = styled.div`
 cursor: pointer;
 display: flex;
 transition: all 0-2s;
-
+padding: 5px;
 
 :hover{
     transform: scale(1.01);
 }
 @media (max-width: 992px){
     img{ 
-        width: 150px;
+        width: 130px;
     } 
 }
-@media (max-width: 476px){
+@media (max-width: 576px){
     img{ 
         display: none;
     } 
@@ -45,7 +45,7 @@ transition: all 0-2s;
 export const LogoMini = styled.div`
 display: none;
 
-@media (max-width: 476px){
+@media (max-width: 576px){
     display: flex;
     img{ 
         width: 50px;
@@ -91,7 +91,7 @@ border-radius: 15px;
 border: 1px solid var(--negro);
 }
 
-@media (max-width: 476px){
+@media (max-width: 576px){
   display: none;
 }
    
@@ -120,7 +120,7 @@ justify-content: center;
         display: none;
     }
 }
-@media (max-width: 476px){
+@media (max-width: 576px){
     display: none;
     border: 1px solid #181818;
     margin: 0;    
@@ -151,7 +151,7 @@ cursor: pointer;
   font-size: 14px;
 }
 
-@media (max-width: 476px){
+@media (max-width: 576px){
   font-size: 13px;
   gap: 7px;
 }
@@ -180,7 +180,7 @@ cursor: pointer;
   font-size: 12px;
   
 }
-@media (max-width: 476px){
+@media (max-width: 576px){
     font-size: 11px;
   gap: 7px;
 }
@@ -210,7 +210,7 @@ height: 30px;
   margin-right: 10px;
   height: 20px;
 }
-@media (max-width: 476px){
+@media (max-width: 576px){
   width: 19px;
   margin-right: 30px;
 }

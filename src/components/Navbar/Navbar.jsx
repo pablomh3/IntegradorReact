@@ -15,14 +15,12 @@ const dispatch = useDispatch();
     return(
         <>
          <NavbarContainer>
-         <Carrito ></Carrito>
+         <Carrito></Carrito>
             <LogoImg>
                 <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logo-nombre1.png" alt="logo" /></Link>
             </LogoImg>
             <NavbarUl>
                <NavbarLi> <Link to='/'> Home </Link>  </NavbarLi> 
-               
-              
             </NavbarUl>
             
             <ContainerUserCarrito>
@@ -37,6 +35,7 @@ const dispatch = useDispatch();
                 </>
                 }
             </ContainerUserCarrito> 
+
             <LogoMini>
                 <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logosolo.png" alt="logo" /></Link>
             </LogoMini>

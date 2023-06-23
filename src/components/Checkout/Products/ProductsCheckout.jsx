@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardsWrapper, Divider, ProductosContainerStyled, SubTotalDivider, TotalContainer, TotalDivider } from './ProductsCheckoutStyles'
+import { CardsWrapper, ProductosContainerStyled, SubTotalDivider, TotalContainer, TotalDivider } from './ProductsCheckoutStyles'
 import CardsCheckout from '../../CardsCheckout/CardsCheckout'
 
 
@@ -17,7 +17,6 @@ const ProductsCheckout = ({ cartItems, shippingCost, price }) => {
           )
         }
         </CardsWrapper>
-            <Divider/>
             {cartItems.length ? 
             
             <TotalContainer>

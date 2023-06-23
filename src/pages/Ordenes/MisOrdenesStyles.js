@@ -3,9 +3,23 @@ import styled from "styled-components";
 export const OrdenesWrapper = styled.div`
   width: 90vw;
   max-width: 1600px;
-  padding: 2rem;
-  margin: 0 auto;
+  padding: 0rem;
+  margin: 140px auto;
 
+  @media (max-width: 992px) {
+        
+        width: 100%;
+        h2{
+          font-size: 20px;
+        }
+        }
+    
+        @media (max-width: 576px){
+          
+          h2{
+            font-size: 16px;
+          }
+    }
 `;
 
 export const OrdenesContainer = styled.div`
@@ -26,6 +40,17 @@ export const OrdenesContainer = styled.div`
   color: transparent;
   text-align: center;
   }
+  @media (max-width: 992px) {
+        
+    h1{font-size: 30px;
+    }}
+
+    @media (max-width: 576px){
+      
+      h1{
+        font-size: 25px;
+      }
+}
 `
 
 export const OrderContainerStyled = styled.div`
@@ -91,5 +116,14 @@ export const Button = styled.button`
    color: var(--blanco);
    transition: all 0.3s;
  }
+ @media (max-width: 992px) {
+        
+       padding: 7px 12px;
 
+        }
+    
+        @media (max-width: 576px){
+          
+          font-size: 16px;
+    }
 `

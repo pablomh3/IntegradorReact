@@ -8,7 +8,14 @@ export const ContainerCheckout = styled.div`
   padding: 2rem 5rem;
   @media (max-width: 992px) {
         flex-direction: column;
-        gap: 5px;
+        gap: 50px;
     }
+    @media (max-width: 576px){
+      margin-top: 120px;
+    padding: 0;
+    width: 100%;
+    gap: 30px;
+}
+
 `;
 

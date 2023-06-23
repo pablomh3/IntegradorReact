@@ -2,25 +2,29 @@ import styled from 'styled-components';
 
 export const CardContainerStyled = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  width: 85%;
-  background: var(--blanco);
-  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
-  padding: 1rem;
-  border-radius: 15px;
-
-
-  & img {
-    width: 80px;
-    height: 80px;
-    border-radius: 16px;
-    object-fit: cover;
-  }
-  @media (max-width: 992px) {
-        width: 70%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 350px;
+    background-color: var(--blanco);
+    padding: 10px;
+    border: 1px solid var(--magenta);
+    border-radius: 20px;
+    img{
+        width: 65px;
+        height: 65px;
     }
+    @media (max-width: 476px){
+        max-width: 320px;
+        width: 65%;
+        gap: 0;
+        padding: 6px;
+        flex-direction: column;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+}
 `;
 export const CartInfo = styled.div`
 display: flex;
@@ -38,7 +42,11 @@ p{
     font-weight: 800;
     font-size: 18px;
 }
-
+@media (max-width: 476px) {
+        h3{
+          font-size: 14px;
+        }
+      }
 `
 export const HandleQuantityContainer = styled.div`
 display: flex;
@@ -51,7 +59,14 @@ display: flex;
   p{
     color: var(--azul);
   }
+  @media (max-width: 476px) {
+        p{
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
 `
+
 export const HandleQuantity = styled.div`
  background: linear-gradient(to left, #4c96d7, #8a25b1);
   font-family: 'Geostar Fill', cursive;
@@ -65,4 +80,9 @@ export const HandleQuantity = styled.div`
   justify-content: center;
   align-items: center;
 
+  @media (max-width: 476px) {
+        width: 50px;
+        gap: 5px;
+        font-size: 14px;
+      }
 `

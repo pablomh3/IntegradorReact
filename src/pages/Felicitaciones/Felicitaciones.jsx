@@ -10,11 +10,12 @@ const Felicitaciones = () => {
   return (
     <FelicitacionesWrapper> 
         <FelicitacionesTitle>
-        <MdOutlineVideogameAsset size={100} color='var(--cyan)'/>
-            <h1>GRACIAS POR TU COMPRA</h1> <BiJoystick size={100} color='var(--magenta)'/>
+        <MdOutlineVideogameAsset size={70} color='var(--cyan)'/>
+            <h1>GRACIAS POR TU COMPRA</h1>
+          <BiJoystick size={70} color='var(--magenta)'/>
         </FelicitacionesTitle>
         <FelicitacionesH2>
-        <TbDiscountCheck size={80} color='green'/>
+        <TbDiscountCheck size={70} color='green'/>
         <h2>Tu pedido se realizó con éxito</h2>
         </FelicitacionesH2>
     <FelicitacionesButton onClick={() => navigate('/')}> Volver a Inicio</FelicitacionesButton>

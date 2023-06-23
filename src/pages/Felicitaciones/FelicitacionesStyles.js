@@ -3,16 +3,28 @@ import styled from "styled-components";
 export const FelicitacionesWrapper = styled.div`
   width: 100vw;
   max-width: 1200px;
-  padding: 2rem;
-  margin: 140px auto;
+  padding: 0 2rem;
+  margin: 160px auto;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  @media (max-width: 992px) {
+        
+        gap: 20px;
+        padding: 0 1rem;
+    }
+    @media (max-width: 576px){
+      width: 100%;
+    padding: 0;
+   gap: 30px;
+    
+}
 `
 export const FelicitacionesTitle = styled.div`
 display: flex;
-margin-top: 120px;
+align-items: center;
 gap: 20px;
 justify-content: center;
 h1{
@@ -26,15 +38,49 @@ h1{
   color: transparent;
   text-align: center;
     }
-     
+    
+    @media (max-width: 992px) {
+        gap: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--magenta);
+      background-color: #181818;
+      padding: 0 15px;
+      border-radius: 30px;
+       h1{
+        font-size: 30px;
+       }
+    }
+    @media (max-width: 576px){
+      width: 340px;
+      border: inherit;
+      background-color: #181818;
+      padding: 0;
+      h1{
+        font-size: 22px;
+       }
+}  
 `
 export const FelicitacionesH2 = styled.div`
 display: flex;
 gap: 15px;
 justify-content: center;
 align-items: center;
+flex-wrap: wrap;
 h2{
- size: 28px;
+ font-size: 25px;
+}
+@media (max-width: 992px) {
+        h2{
+          font-size: 22px;
+    }}
+    @media (max-width: 576px){
+      gap: 0;
+      flex-direction: column;
+    h2{
+      font-size: 18px;
+    }
 }
 `
 export const FelicitacionesButton = styled.button`
@@ -53,4 +99,9 @@ export const FelicitacionesButton = styled.button`
  :hover{
    color: var(--blanco);
    transition: all 0.3s;
- }`
+ }
+ @media (max-width: 576px){
+      padding: 8px 12px;
+      font-size: 16px;
+}  
+ `

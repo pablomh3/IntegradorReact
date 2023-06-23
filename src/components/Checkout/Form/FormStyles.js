@@ -11,10 +11,25 @@ export const CheckoutDatosStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  
+  align-items: center;
+  text-align: center;
   h2{
     text-align: center;
     font-size: 25px;
+    }
+
+    @media (max-width: 992px) {
+        width: 80%;
+        gap: 30px;
+        padding: 0 10px;
+    }
+    @media (max-width: 467px) {
+        width: 85%;
+        gap: 10px;
+        
+        h2{
+          font-size: 20px;
+        }
     }
 `;
 
@@ -27,10 +42,12 @@ export const Formik = styled(FormikContainer)`
 export const Form = styled(FormikForm)`
  display: flex;
  flex-direction: column;
-
+justify-content: center;
+align-items: center;
   div{
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
@@ -54,6 +71,9 @@ color: var(--blanco);
 font-size: 14px;
 font-weight: 600;
 text-align: left;
+@media (max-width: 992px) {
+        font-size: 13px;
+    }
 `
 export const CheckoutInput = styled.input`
  padding: 0 5px;
@@ -66,7 +86,13 @@ export const CheckoutInput = styled.input`
   color: var(--magenta);
   opacity: 0.5; 
  }
-
+ @media (max-width: 992px) {
+        width: 270px;
+    }
+    @media (max-width: 476px) {
+        width: 240px;
+        height: 25px;
+    }
 `
 export const ErrorMessageStyled = styled.p`
 
@@ -74,7 +100,10 @@ export const ErrorMessageStyled = styled.p`
   margin-top: 2px;
   color: #fb103d;
   font-size: 14px;
-  
+  @media (max-width: 476px) {
+        font-size: 12px;
+        margin-top: 1px;
+    }
 `
 export const CheckoutButton = styled.button`
 
@@ -101,7 +130,9 @@ export const CheckoutButton = styled.button`
     color: var(--blanco);
   }
 
- @media (max-width: 992px) {
- 
+ @media (max-width: 476px) {
+  width: 160px;
+  font-size: 15px;
+  padding: 6px 10px;
  }
  `
