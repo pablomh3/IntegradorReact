@@ -27,6 +27,7 @@ const ordersSlice = createSlice({
         },
 
         fetchOrdersFail: (state, action) =>{
+            alert('error')
             return{
                 ...state,
                 loading: false,

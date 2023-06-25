@@ -11,7 +11,7 @@ export const Categories = [{
     name: 'Consolas',
     category: 'Consolas',
 }, {
-    id: 3,
+    id: 4,
     name: 'Componentes',
     category: 'Componentes',
 }, 

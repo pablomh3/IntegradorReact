@@ -1,10 +1,12 @@
-import { LogoImg, NavbarContainer, NavbarLi, NavbarUl, IniciaSesion, ContainerUserCarrito, Registrarse, LogoMini } from "./Navbar.Styles"
+import { LogoImg, NavbarContainer, NavbarLi, NavbarUl, IniciaSesion, ContainerUserCarrito, Registrarse, LogoMini, UserContainer } from "./Navbar.Styles"
 import { ImUser, ImUserPlus } from 'react-icons/im';
 import { Link, useNavigate } from "react-router-dom";
 import Carrito from "../Carrito/Carrito";
 import { CarritoContainer } from "../Carrito/CarritoContainer";
 import { useDispatch, useSelector } from "react-redux";
-import { setCurrentUser } from "../../redux/User/userSlice";
+import { setCurrentUser, toggleHiddenMenu } from "../../redux/User/userSlice";
+import User from "./User";
+
 
 const Navbar =() =>{
 
@@ -15,12 +17,21 @@ const dispatch = useDispatch();
     return(
         <>
          <NavbarContainer>
-         <Carrito></Carrito>
+         <User></User>
+            <Carrito></Carrito>
+            
             <LogoImg>
                 <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logo-nombre1.png" alt="logo" /></Link>
             </LogoImg>
+            <LogoMini>
+                <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logosolo.png" alt="logo" /></Link>
+            </LogoMini>
+
+            <UserContainer onClick={() => dispatch (toggleHiddenMenu())}>
+                <ImUser size={22} />
+            </UserContainer>
             <NavbarUl>
-               <NavbarLi> <Link to='/'> Home </Link>  </NavbarLi> 
+                <NavbarLi> <Link to='/'> Home </Link>  </NavbarLi> 
             </NavbarUl>
             
             <ContainerUserCarrito>
@@ -35,10 +46,9 @@ const dispatch = useDispatch();
                 </>
                 }
             </ContainerUserCarrito> 
-
-            <LogoMini>
-                <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logosolo.png" alt="logo" /></Link>
-            </LogoMini>
+           
+           
+            
             <CarritoContainer/>
             
         </NavbarContainer>

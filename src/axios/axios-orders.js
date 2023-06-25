@@ -22,7 +22,7 @@ export const getOrders = async (dispatch, currentUser) => {
   } catch (error) {
     console.error({ error });
     dispatch(
-      fetchOrdersFail('Oops, algo salío mal. No hay ordenes sin usuario.')
+      fetchOrdersFail('Oops, algo salío mal')
     );
   }
 };

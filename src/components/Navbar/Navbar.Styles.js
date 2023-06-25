@@ -18,7 +18,9 @@ background-color: #181818;
 }
 
 @media (max-width: 576px){
-
+justify-content: space-between;
+gap: 0;
+align-items: center;
 
 }
 `
@@ -199,8 +201,7 @@ color: var(--cyan);
 cursor: pointer;
 height: 30px;
 :hover{
-    background-color: var(--magenta);
-    color: var(--cyan);
+    color: var(--magenta);
     transform: scale(1.0);
     font-weight: 800;
    border: 1px solid var(--cyan);
@@ -213,5 +214,32 @@ height: 30px;
 @media (max-width: 576px){
   width: 19px;
   margin-right: 30px;
+  padding: 12px 16px;
 }
+`
+export const UserContainer = styled.div`
+display: none;
+padding: 13px 20px;
+border-radius: 13px;
+transition: all 0.6s;
+background-color: var(--negro);
+border: 1px solid var(--cyan);
+color: var(--magenta);
+cursor: pointer;
+
+:hover{
+    color: var(--cyan);
+    transform: scale(1.0);
+    font-weight: 800;
+   border: 1px solid var(--magenta);
+}
+
+@media (max-width: 576px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  margin-left: 30px;
+  padding: 11px 16px;
+}
+
 `

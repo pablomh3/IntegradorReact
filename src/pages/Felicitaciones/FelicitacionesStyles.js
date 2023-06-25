@@ -81,6 +81,10 @@ h2{
     h2{
       font-size: 18px;
     }
+    h3{
+      font-size: 16px;
+      color: var(--cyan);
+    }
 }
 `
 export const FelicitacionesButton = styled.button`
