@@ -10,6 +10,7 @@ const Layout = ({ children }) => {
     const hiddenCart = useSelector( state=> state.cart.hidden)
     const hiddenMenu = useSelector (state=> state.user.hiddenMenu)
      const { pathname } = useLocation ();
+     
     useEffect (() => {
 
         if (!hiddenCart){

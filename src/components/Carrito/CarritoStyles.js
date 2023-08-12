@@ -33,7 +33,7 @@ h2{
 p{
     align-self: center;
 }
-@media (max-width: 476px){
+@media (max-width: 576px){
     padding: 10px 10px 20px 30px;
     width: 160px;
     height: 80%;
@@ -60,7 +60,7 @@ overflow-x: hidden;
     background-color: var(--cyan);
     border: 3px solid var(--azul);
 }
-@media (max-width: 476px){
+@media (max-width: 576px){
 gap: 10px;
 }
 `
@@ -78,7 +78,7 @@ export const CartContainer = styled.div`
         width: 65px;
         height: 65px;
     }
-    @media (max-width: 476px){
+    @media (max-width: 576px){
         max-width: 200px;
         gap: 0;
         padding: 6px;
@@ -105,7 +105,7 @@ p{
     font-weight: 800;
     font-size: 18px;
 }
-@media (max-width: 476px){
+@media (max-width: 576px){
     h3{
         font-size: 13px;
     }
@@ -121,7 +121,7 @@ display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  @media (max-width: 476px){
+  @media (max-width: 576px){
     gap: 0;
     justify-content: center;
     padding: 0;
@@ -141,7 +141,7 @@ export const HandleQuantity = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 476px){
+  @media (max-width: 576px){
     gap: 6px;
     width: 50px;
   }
@@ -166,7 +166,7 @@ span{
     font-weight: 600;
     font-size: 20px;
 }
-@media (max-width: 476px){
+@media (max-width: 576px){
     gap: 10px;
     p{
         font-size: 18px;
@@ -200,7 +200,7 @@ export const ButtonComprar = styled.button`
     background: var(--azul);
     color: var(--blanco);
   }
-  @media (max-width: 476px){
+  @media (max-width: 576px){
     font-size: 14px;
     padding: 13px 20px;
   }
@@ -228,7 +228,7 @@ export const ButtonVaciar = styled.button`
     background: var(--azul);
     color: var(--blanco);
   }
-  @media (max-width: 476px){
+  @media (max-width: 576px){
     font-size: 14px;
     padding: 10px 20px;
   }

@@ -133,19 +133,11 @@ img{
   width: 200px;
   height: 400px;
   img{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
   }
 }
-@media (max-width: 476px){
-  width: 90px;
-  height: 250px;
-  gap: 1px;
-  img{
-    height: 50px;
-    width: 50px;
-  }
-}
+
 `
 export const CardH3 = styled.div`
  color: var(--azul);
@@ -158,11 +150,7 @@ export const CardH3 = styled.div`
     font-size: 16px;
   }
 }
-@media (max-width: 476px){
-    h3{
-      font-size: 13px;
-    }
-  }
+
 
 `
 export const CardPrecio = styled.div`
@@ -197,10 +185,7 @@ background: linear-gradient(to left, #4c96d7, #8a25b1);
 
     font-size: 13px;
   }
-  @media (max-width: 476px){
-    padding: 3px 5px;
-    font-size: 11px;
-  }
+  
 `
 export const VerMas = styled.div`
 display: flex;

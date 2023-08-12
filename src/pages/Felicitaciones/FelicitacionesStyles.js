@@ -68,6 +68,7 @@ gap: 15px;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
+flex-direction: column;
 h2{
  font-size: 25px;
 }

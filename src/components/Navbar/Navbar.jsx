@@ -23,17 +23,17 @@ const dispatch = useDispatch();
             <LogoImg>
                 <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logo-nombre1.png" alt="logo" /></Link>
             </LogoImg>
-            <LogoMini>
-                <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logosolo.png" alt="logo" /></Link>
-            </LogoMini>
 
             <UserContainer onClick={() => dispatch (toggleHiddenMenu())}>
                 <ImUser size={22} />
             </UserContainer>
             <NavbarUl>
                 <NavbarLi> <Link to='/'> Home </Link>  </NavbarLi> 
+                <NavbarLi> <Link to='/productos'> Productos </Link>  </NavbarLi> 
             </NavbarUl>
-            
+            <LogoMini>
+                <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logosolo.png" alt="logo" /></Link>
+            </LogoMini>
             <ContainerUserCarrito>
                 { currentUser ? 
                 <>

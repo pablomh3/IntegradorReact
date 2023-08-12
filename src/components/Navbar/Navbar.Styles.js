@@ -18,10 +18,9 @@ background-color: #181818;
 }
 
 @media (max-width: 576px){
-justify-content: space-between;
+justify-content: center;
 gap: 0;
 align-items: center;
-
 }
 `
 export const LogoImg = styled.div`
@@ -39,6 +38,7 @@ padding: 5px;
     } 
 }
 @media (max-width: 576px){
+  padding: 0;
     img{ 
         display: none;
     } 
@@ -63,6 +63,13 @@ font-family: 'Geostar Fill', cursive;
 font-size: 18px; 
 width: 50%;
 
+@media (max-width: 992px){
+  gap: 15px;
+  font-size: 16px;
+}
+@media (max-width: 576px){
+  display: none;
+}
 `
 export const NavbarLi = styled.div`
 background-color: var(--negro);
@@ -126,7 +133,7 @@ justify-content: center;
     display: none;
     border: 1px solid #181818;
     margin: 0;    
-    min-width: 230px;
+    min-width: 210px;
    
     background-color: #181818;
     gap: 10px;
@@ -150,11 +157,11 @@ cursor: pointer;
     color: var(--blanco);
 }
 @media (max-width: 992px){
-  font-size: 14px;
+  font-size: 13px;
 }
 
 @media (max-width: 576px){
-  font-size: 13px;
+  font-size: 12px;
   gap: 7px;
 }
 `
@@ -213,7 +220,7 @@ height: 30px;
 }
 @media (max-width: 576px){
   width: 19px;
-  margin-right: 30px;
+margin-left: 100px;
   padding: 12px 16px;
 }
 `
@@ -238,7 +245,7 @@ width: 19px;
     display: flex;
     justify-content: center;
     align-items: center;
-  margin-left: 30px;
+  margin-right: 100px;
   padding: 11px 16px;
 }
 
