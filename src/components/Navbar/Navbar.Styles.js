@@ -13,7 +13,7 @@ overflow: hidden;
 background-color: #181818;
 
 @media (max-width: 992px){
-
+  align-items: center;
     gap: 20px;
 }
 
@@ -50,7 +50,7 @@ display: none;
 @media (max-width: 576px){
     display: flex;
     img{ 
-        width: 50px;
+        width: 57px;
         
     } }
 
