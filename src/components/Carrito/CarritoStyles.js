@@ -35,7 +35,7 @@ p{
 }
 @media (max-width: 576px){
     padding: 10px 10px 20px 30px;
-    width: 160px;
+    width: 230px;
     height: 80%;
  h2{
     font-size: 20px;

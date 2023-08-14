@@ -6,7 +6,7 @@ import { CarritoContainer } from "../Carrito/CarritoContainer";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentUser, toggleHiddenMenu } from "../../redux/User/userSlice";
 import User from "./User";
-
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar =() =>{
 
@@ -25,7 +25,7 @@ const dispatch = useDispatch();
             </LogoImg>
 
             <UserContainer onClick={() => dispatch (toggleHiddenMenu())}>
-                <ImUser size={22} />
+                <GiHamburgerMenu size={22} />
             </UserContainer>
             <NavbarUl>
                 <NavbarLi> <Link to='/'> Home </Link>  </NavbarLi> 

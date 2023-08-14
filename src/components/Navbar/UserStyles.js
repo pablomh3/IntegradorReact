@@ -5,7 +5,7 @@ export const ContainerUser = styled(motion.div)`
 display: none;
 top: 110px;
 left: 0;
-gap: 13px;
+gap: 20px;
 @media (max-width: 576px){
     display: flex;
     position: fixed;
@@ -19,13 +19,13 @@ gap: 13px;
     flex-direction: column;
     overflow: none;
     z-index: 2;
-    height: 140px;
-    width: 120px;
+    padding: 20px;
+    width: 140px;
 }
 `
 export const IniciaSesionUser = styled.span `
 font-weight: 600;
-font-size: 10px;
+font-size: 12px;
 display: flex;
 gap: 5px;
 justify-content: center;
@@ -43,7 +43,7 @@ cursor: pointer;
 
 export const RegistrarseUser = styled.span `
 font-weight: 600;
-font-size: 10px;
+font-size: 12px;
 display: flex;
 gap: 5px;
 justify-content: center;
@@ -59,5 +59,45 @@ cursor: pointer;
 :hover{
     transform: scale(1.0);
     color: var(--blanco);
+}
+`
+export const ListaProductos = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 8px;
+justify-content: center;
+margin-top: 30px;
+`
+
+export const ProductosH2 = styled.div `
+  background: linear-gradient(to left, var(--magenta), var(--cyan));
+background-clip: text;
+-webkit-background-clip: text;
+font-family: 'Press Start 2P', cursive;
+color: transparent;
+font-size: 15px;
+font-weight: 800;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 4px;
+`
+export const ProductosUl = styled.div `
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 2px;
+justify-content: center;
+`
+
+export const ProductosLi = styled.p`
+color: var(--blanco);
+font-size: 6px; 
+cursor: pointer;
+transition: all 0.2s;
+:hover{
+    color: var(--cyan);
+    transform: scale(1.0);
 }
 `
