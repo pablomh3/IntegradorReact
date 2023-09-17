@@ -15,3 +15,13 @@ export const logInInitialValues ={
     email: '',
     password: '',
 }
+
+export const sendEmailValues ={
+    email: '',
+}
+
+export const newPasswordValues = {
+    email: '',
+    code: '',
+    password: '',
+}

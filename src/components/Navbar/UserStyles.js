@@ -10,8 +10,8 @@ gap: 20px;
     display: flex;
     position: fixed;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     background-color: #181818;
     border-top: 1px solid var(--blanco);
     border-right: 1px solid var(--blanco);
@@ -19,8 +19,8 @@ gap: 20px;
     flex-direction: column;
     overflow: none;
     z-index: 2;
-    padding: 20px;
-    width: 140px;
+    padding: 15px;
+    width: 45%;
 }
 `
 export const IniciaSesionUser = styled.span `

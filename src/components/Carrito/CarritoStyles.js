@@ -35,7 +35,7 @@ p{
 }
 @media (max-width: 576px){
     padding: 10px 10px 20px 30px;
-    width: 230px;
+    width: 80%;
     height: 80%;
  h2{
     font-size: 20px;
@@ -79,13 +79,13 @@ export const CartContainer = styled.div`
         height: 65px;
     }
     @media (max-width: 576px){
-        max-width: 200px;
+        max-width: 400px;
         gap: 0;
         padding: 6px;
         flex-direction: column;
         img{
-            width: 50px;
-            height: 50px;
+            width: 75px;
+            height: 75px;
         }
 }
 `

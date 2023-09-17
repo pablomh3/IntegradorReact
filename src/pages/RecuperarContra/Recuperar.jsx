@@ -1,15 +1,15 @@
 import { Formik } from "formik"
-import { ContainerIniciarSesion, Form, IniciarSesionWrapper, LinkLogIn, LinksLogIn, LogInButton } from "./IniciarSesionStyles"
+import { ContainerIniciarSesion, Form, H3Recover, IniciarSesionWrapper, LinkLogIn, LinksLogIn, LogInButton } from "../IniciarSesion/IniciarSesionStyles"
 import { useNavigate } from "react-router-dom"
-import IniciarSesionForm from "./IniciarSesionFormik";
-import { logInInitialValues } from "../../components/Formik/InitialValues";
-import { logInValidationSchema } from "../../components/Formik/ValidationSchema";
+import IniciarSesionForm from "../IniciarSesion/IniciarSesionFormik";
+import { sendEmailValues } from "../../components/Formik/InitialValues";
+import { sendEmailValidationSchema } from "../../components/Formik/ValidationSchema";
 import { useDispatch } from "react-redux";
 import { useRedirect } from "../../hooks/UseRedirect";
-import { loginUser } from "../../axios/axios.user";
 import { setCurrentUser } from "../../redux/User/userSlice";
+import { sendEmail } from "../../axios/axios.user";
 
-const IniciarSesion =() =>{
+const RecuperarClave =() =>{
     const navigate = useNavigate();
     const dispatch = useDispatch();
     useRedirect('/')
@@ -17,12 +17,12 @@ const IniciarSesion =() =>{
         <IniciarSesionWrapper>
             
              <ContainerIniciarSesion>
-             <h1>Por favor ingrese sus datos</h1>
+             <h1>Recuperar contraseña</h1>
              <Formik 
-               initialValues={logInInitialValues}
-               validationSchema={logInValidationSchema}
+               initialValues={sendEmailValues}
+               validationSchema={sendEmailValidationSchema}
                onSubmit={async (values) => {
-                const user = await loginUser(values.email, values.password)
+                const user = await sendEmail(values.email)
                 if (user){
                     dispatch(setCurrentUser({
                         ...user.usuario,
@@ -36,21 +36,14 @@ const IniciarSesion =() =>{
                         name='email'
                         type='text'
                         placeholder='email@email.com'>
-                            Email:
+                            Ingrese su email:
                         </IniciarSesionForm>
-
-                        <IniciarSesionForm
-                        name='password'
-                        type='password'
-                        
-                        placeholder='Contraseña'>
-                            Contraseña:
-                        </IniciarSesionForm>
+                        <H3Recover>Recibirás un código y un link para generar una nueva clave</H3Recover>
                         <LinksLogIn>
-                            <LinkLogIn onClick={() => navigate('/recuperar')}> <u> Olvidé mi contraseña</u> </LinkLogIn>
                             <LinkLogIn onClick={() => navigate('/registrarse')}>¿No tenés cuenta? <u>Registrate</u></LinkLogIn>
                         </LinksLogIn>
-                        <LogInButton>Enviar</LogInButton>
+                       
+                        <LogInButton>Recuperar</LogInButton>
                     </Form>
                </Formik>
             </ContainerIniciarSesion>
@@ -60,4 +53,4 @@ const IniciarSesion =() =>{
     )
 }
 
-export default IniciarSesion
+export default RecuperarClave

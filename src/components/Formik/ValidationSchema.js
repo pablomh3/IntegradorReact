@@ -18,3 +18,13 @@ export const checkoutValidationSchema = Yup.object({
     email: Yup.string().matches(regEmail,'Mail inválido').required('Campo vacío'),
     password: Yup.string().min(6, 'Contraseña muy corta').required('Campo vacío')
   })
+
+  export const sendEmailValidationSchema = Yup.object({
+    email: Yup.string().matches(regEmail,'Mail inválido').required('Campo vacío'),
+  })
+
+  export const newPasswordValidationSchema = Yup.object({
+    email: Yup.string().matches(regEmail,'Mail inválido').required('Campo vacío'),
+    code: Yup.string().min(6, 'El código debe ser de 6 caracteres').required('Campo vacío'),
+    password: Yup.string().min(6, 'Contraseña muy corta').required('Campo vacío')
+  })

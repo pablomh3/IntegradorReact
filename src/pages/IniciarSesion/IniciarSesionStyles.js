@@ -50,9 +50,14 @@ export const Form = styled(FormikForm)`
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
-  gap: 0px;
+  gap: 20px;
 
 `;
+
+export const H3Recover = styled.p`
+color: var(--magenta);
+font-size: 12px;
+`
 
 export const FormText = styled.p`
 color: var(--blanco);
@@ -95,14 +100,14 @@ align-items: center;
 
 export const LinksLogIn = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 0px;
   font-size: 14px;
   transition: all 0.3s;
   font-family: 'Noto Sans Mono', monospace;
   gap: 55px;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
+
 `
 export const LinkLogIn = styled.span`
 font-size: 14px;

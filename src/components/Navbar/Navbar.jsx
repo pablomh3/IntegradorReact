@@ -7,10 +7,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { setCurrentUser, toggleHiddenMenu } from "../../redux/User/userSlice";
 import User from "./User";
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { toggleHiddenCart } from "../../redux/Cart/CartSlice";
 
 const Navbar =() =>{
 
 const currentUser = useSelector(state => state.user.currentUser);
+const {
+    hidden: hiddenCart,
+  } = useSelector(state => state.cart)
 const dispatch = useDispatch();     
  const navigate = useNavigate ();
 
@@ -24,7 +28,7 @@ const dispatch = useDispatch();
                 <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logo-nombre1.png" alt="logo" /></Link>
             </LogoImg>
 
-            <UserContainer onClick={() => dispatch (toggleHiddenMenu())}>
+            <UserContainer onClick={() => hiddenCart ?  dispatch (toggleHiddenMenu()) : dispatch (toggleHiddenCart()) & dispatch (toggleHiddenMenu())} >
                 <GiHamburgerMenu size={22} />
             </UserContainer>
             <NavbarUl>
@@ -42,7 +46,7 @@ const dispatch = useDispatch();
                 </> :
                 <>
                 <IniciaSesion onClick={() => navigate('/iniciar-sesion')}> <ImUser size={18}/> <u> Iniciá Sesión </u></IniciaSesion>
-                <Registrarse onClick={() => navigate('/registrarse')}> <ImUserPlus size={16}/> <p>¿No tenés cuenta?</p>  <u> Registrate</u> </Registrarse>
+                <Registrarse onClick={() => navigate('/registrarse')}> <ImUserPlus size={16}/> <u> Registrate</u> </Registrarse>
                 </>
                 }
             </ContainerUserCarrito> 

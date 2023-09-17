@@ -28,3 +28,28 @@ export const loginUser = async (email, password) => {
         return alert(error.response.data.errors[0].msg)
     }
 }
+
+export const recoverPassword = async (email, code, password) =>{
+    try {
+        const response = await axios.patch(`${BASE_URL}/auth/password`, {
+            email,
+            code,
+            password
+          });
+          return response.data;
+    } catch (error) {
+        return alert(error.response.data.msg);
+    }
+}
+
+export const sendEmail = async (email) => {
+    try {
+      const response = await axios.post(`${BASE_URL}/recover`, {
+        email,
+      })
+      return response.data
+    } catch (error) {
+      console.log( {SendEmailError: error} )
+      return alert(error.response.data.errors[0].msg)
+    }
+  }
