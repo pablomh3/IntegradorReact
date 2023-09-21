@@ -44,7 +44,7 @@ export const recoverPassword = async (email, code, password) =>{
 
 export const sendEmail = async (email) => {
     try {
-      const response = await axios.post(`${BASE_URL}/recover`, {
+      const response = await axios.post(`${BASE_URL}/auth/recover`, {
         email,
       })
       return response.data
