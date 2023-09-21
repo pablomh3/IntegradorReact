@@ -19,11 +19,17 @@ export const getOrders = async (dispatch, currentUser) => {
     if (orders) {
       dispatch(fetchOrdersSuccess(orders.data.data));
     }
+
+    if (!orders) {
+      alert("no se encontraron órdenes")
+      return
+    }
   } catch (error) {
     console.error({ error });
     dispatch(
       fetchOrdersFail('Oops, algo salío mal')
     );
+    return
   }
 };
 
