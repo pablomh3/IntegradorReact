@@ -2,10 +2,10 @@ import { BASE_URL } from "../constants/constants"
 import axios from 'axios'
 
 
-export const createUser = async (nombre, email, password) => {
+export const createUser = async (name, email, password) => {
     try {
         const { data } = await axios.post(`${BASE_URL}/auth/register`, {
-            nombre,
+            name,
             email,
             password
         })
