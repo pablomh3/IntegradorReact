@@ -24,12 +24,7 @@ const RecuperarClave =() =>{
                validationSchema={sendEmailValidationSchema}
                onSubmit={async (values) => {
                 const user = await sendEmail(values.email)
-                if (user){
-                    dispatch(setCurrentUser({
-                        ...user.usuario,
-                        token: user.token
-                    }))
-                }
+                
             }}>
                     <Form>
 
@@ -47,12 +42,8 @@ const RecuperarClave =() =>{
                         <LogInButton
                                 onClick={() => {
                                 setTimeout(() => {
-                                navigate('/contraseña');
-                        }, 1000);
-                        }}
->
-  Recuperar
-</LogInButton>
+                                navigate('/contraseña')}, 1000);}}> Recuperar
+                        </LogInButton>
                     </Form>
                </Formik>
             </ContainerIniciarSesion>
