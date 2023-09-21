@@ -41,7 +41,7 @@ const dispatch = useDispatch();
             <ContainerUserCarrito>
                 { currentUser ? 
                 <>
-                    <IniciaSesion onClick={() => navigate('/mis-ordenes')}> <ImUser size={22}/> <u> {currentUser.name} </u> </IniciaSesion>
+                    <IniciaSesion onClick={() => navigate('/mis-ordenes')}> <ImUser size={22}/> <u> Tus órdenes </u> </IniciaSesion>
                     <Registrarse onClick={() => {dispatch(setCurrentUser(null))}}>  <u>Cerrar sesión </u></Registrarse>
                 </> :
                 <>
