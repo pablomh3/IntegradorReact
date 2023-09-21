@@ -43,7 +43,7 @@ const RecuperarClave =() =>{
                             <LinkLogIn onClick={() => navigate('/registrarse')}>¿No tenés cuenta? <u>Registrate</u></LinkLogIn>
                         </LinksLogIn>
                        
-                        <LogInButton onClick={() => setTimeout (navigate ('/contraseña'), 1000 )}>Recuperar</LogInButton>
+                        <LogInButton onClick={() => setTimeout (navigate ('/contraseña'), 10000 )}>Recuperar</LogInButton>
                     </Form>
                </Formik>
             </ContainerIniciarSesion>
