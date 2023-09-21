@@ -48,7 +48,7 @@ const RecuperarClave =() =>{
                                 onClick={() => {
                                 setTimeout(() => {
                                 navigate('/contraseña');
-                        }, 10000);
+                        }, 1000);
                         }}
 >
   Recuperar
