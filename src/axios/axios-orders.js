@@ -9,7 +9,7 @@ import {
 
 export const getOrders = async (dispatch, currentUser) => {
   dispatch(fetchOrdersStart());
-  console.log(currentUser.token)
+ 
   try {
     const orders = await axios.get(`${BASE_URL}/orders`, {
       headers: {
@@ -37,6 +37,7 @@ export const getOrders = async (dispatch, currentUser) => {
 };
 
 export const createOrder = async (order, dispatch, currentUser) => {
+  console.log(currentUser.token)
   try {
     const response = await axios.post(`${BASE_URL}/orders`, order, {
       headers: {
