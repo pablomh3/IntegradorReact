@@ -15,6 +15,7 @@ export const getOrders = async (dispatch, currentUser) => {
       mode: 'cors',
       headers: {
         'x-token': currentUser.token,
+        mode: 'cors',
       },
       
     });
@@ -46,7 +47,9 @@ export const createOrder = async (order, dispatch, currentUser) => {
   console.log(currentUser.token)
   try {
     const response = await axios.post(`${BASE_URL}/orders`, order, {
+      
       headers: {
+        mode: 'cors',
         'x-token': currentUser.token,
       },
     });
