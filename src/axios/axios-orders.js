@@ -9,13 +9,16 @@ import {
 
 export const getOrders = async (dispatch, currentUser) => {
   dispatch(fetchOrdersStart());
-
+  console.log(currentUser.token)
   try {
     const orders = await axios.get(`${BASE_URL}/orders`, {
       headers: {
         'x-token': currentUser.token,
       },
+      
     });
+
+    
     if (orders) {
       dispatch(fetchOrdersSuccess(orders.data.data));
     }
