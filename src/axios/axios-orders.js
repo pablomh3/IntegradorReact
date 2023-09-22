@@ -37,6 +37,11 @@ export const getOrders = async (dispatch, currentUser) => {
 };
 
 export const createOrder = async (order, dispatch, currentUser) => {
+
+  console.log('Order:', order);
+  console.log('Dispatch:', dispatch);
+  console.log('CurrentUser:', currentUser);
+  
   console.log(currentUser.token)
   try {
     const response = await axios.post(`${BASE_URL}/orders`, order, {

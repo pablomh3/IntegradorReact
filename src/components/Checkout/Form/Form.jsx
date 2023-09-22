@@ -30,6 +30,7 @@ const Formulario = (  {cartItems, shippingCost, price}  ) => {
             console.log (orderData.items)
             try {
               await createOrder(orderData, dispatch, currentUser);
+              
               navigate('/felicitaciones');
               dispatch(clearCart());
             } catch (error) {
