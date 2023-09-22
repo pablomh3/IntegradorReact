@@ -12,6 +12,7 @@ export const getOrders = async (dispatch, currentUser) => {
  
   try {
     const orders = await axios.get(`${BASE_URL}/orders`, {
+      mode: 'cors',
       headers: {
         'x-token': currentUser.token,
       },
