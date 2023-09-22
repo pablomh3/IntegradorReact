@@ -25,7 +25,8 @@ export const loginUser = async (email, password) => {
         return response.data
     } catch (error) {
         console.log({ loginUserError: error })
-        return alert(error.response.data.errors[0].msg)
+       alert(error.response.data.errors[0].msg)
+       return 
     }
 }
 
@@ -38,7 +39,8 @@ export const recoverPassword = async (email, code, password) =>{
           });
           return response.data;
     } catch (error) {
-        return alert(error.response.data.msg);
+         alert(error.response.data.msg);
+         return
     }
 }
 
@@ -50,6 +52,7 @@ export const sendEmail = async (email) => {
       return response.data
     } catch (error) {
       console.log( {SendEmailError: error} )
-      return alert(error.response.data.errors[0].msg)
+       alert(error.response.data.errors[0].msg)
+       return
     }
   }
