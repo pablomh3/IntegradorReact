@@ -35,6 +35,7 @@ const Formulario = (  {cartItems, shippingCost, price}  ) => {
               dispatch(clearCart());
             } catch (error) {
                 alert('hubo un error')
+                navigate('/*')
             }
           }}
         >

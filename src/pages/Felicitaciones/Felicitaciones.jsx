@@ -17,7 +17,7 @@ const Felicitaciones = () => {
         <FelicitacionesH2>
         <TbDiscountCheck size={70} color='green'/>
         <h2>Tu pedido se realizó con éxito</h2>
-        <h3>Te enviaremos la factura por mail</h3>
+  
         </FelicitacionesH2>
     <FelicitacionesButton onClick={() => navigate('/')}> Volver a Inicio</FelicitacionesButton>
     </FelicitacionesWrapper>
