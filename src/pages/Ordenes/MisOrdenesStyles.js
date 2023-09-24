@@ -72,7 +72,7 @@ export const Orders = styled.div`
     font-size: 23px;
 }
 p{
-    font-family: 'Geostar Fill', cursive;
+    font-family: 'Press Start 2P', cursive;
     font-weight: 800;
     background: linear-gradient(to left, var(--magenta), var(--cyan));
     background-clip: text;
@@ -83,7 +83,7 @@ p{
 }
 
 h2{
-    font-family: 'Press Start 2P', cursive;
+  font-family: 'Geostar Fill', cursive;
     font-weight: 800;
     background: linear-gradient(to left, var(--magenta), var(--cyan));
     background-clip: text;

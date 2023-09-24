@@ -31,12 +31,7 @@ const Registro =() => {
                 onSubmit={async (values, actions) => {
                     const user = await createUser(values.name, values.email, values.password)
                     actions.resetForm()
-                    if (user){
-                        dispatch(setCurrentUser({
-                            ...user.usuario,
-                            token: user.token
-                        }))
-                    }
+                   
                 }}
                  >
                     <Form>
@@ -65,7 +60,7 @@ const Registro =() => {
                         <LinksRegister>
                             <LinkRegister onClick={() => navigate('/iniciar-sesion')}> ¿Ya tenés cuenta? <u>Iniciar Sesión</u></LinkRegister>
                         </LinksRegister>
-                        <RegisterButton>Enviar</RegisterButton>
+                        <RegisterButton onClick={() => navigate('/iniciar-sesion')}>Enviar</RegisterButton>
                     </Form>
                     
                 </Formik>
