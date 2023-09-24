@@ -8,6 +8,7 @@ import { setCurrentUser, toggleHiddenMenu } from "../../redux/User/userSlice";
 import User from "./User";
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { toggleHiddenCart } from "../../redux/Cart/CartSlice";
+import { FaUserMinus } from 'react-icons/fa';
 
 const Navbar =() =>{
 
@@ -42,7 +43,7 @@ const dispatch = useDispatch();
                 { currentUser ? 
                 <>
                     <IniciaSesion onClick={() => navigate('/mis-ordenes')}> <ImUser size={22}/> <u> Mis órdenes </u> </IniciaSesion>
-                    <Registrarse onClick={() => {dispatch(setCurrentUser(null)); {navigate('/')} }} > <FaUserMinus size={21}  <u>Cerrar sesión </u></Registrarse>
+                    <Registrarse onClick={() => {dispatch(setCurrentUser(null)); {navigate('/')} }} >  <FaUserMinus size={21}/> <u>Cerrar sesión </u> </Registrarse>
                 </> :
                 <>
                 <IniciaSesion onClick={() => navigate('/iniciar-sesion')}> <ImUser size={18}/> <u> Iniciá Sesión </u></IniciaSesion>

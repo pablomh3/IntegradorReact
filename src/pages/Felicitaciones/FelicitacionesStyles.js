@@ -113,19 +113,20 @@ export const FelicitacionesButton = styled.button`
 
 export const FelicitacionesButtonAlt = styled.button`
 
-border: 1px solid var(--azul);
+border: 1px solid var(--cyan);
  border-radius: 10%;
  padding: 9px 14px;
- background: var(--azul);
+ background: var(--blanco);
  font-family: 'Geostar Fill', cursive;
  font-size: 18px;
- color: linear-gradient(to left, #4c96d7, #8a25b1);
+ color: var(--magenta);
  font-weight: 700;
- 
  cursor: pointer;
+
 :hover{
- color: var(--blanco);
+ color: var(--cyan);
  transition: all 0.3s;
+ border: 1px solid var(--magenta);
 }
 @media (max-width: 576px){
     padding: 8px 12px;
