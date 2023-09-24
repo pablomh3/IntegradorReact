@@ -40,7 +40,12 @@ export const OrdenesContainer = styled.div`
   color: transparent;
   text-align: center;
   }
-   
+   @media (max-width: 576px){
+    h1{
+      margin-top: 100px;
+      font-size: 30px;
+    }
+   }
 `
 
 export const OrderContainerStyled = styled.div`
@@ -51,8 +56,7 @@ export const OrderContainerStyled = styled.div`
   flex-wrap: wrap;
 `
 export const Orders = styled.div`
- max-width: 500px;
- min-width: 400px;
+ width: 500px;
   background: var(--blanco);
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
   padding: 1rem;
@@ -89,7 +93,7 @@ h2{
     cursor: pointer;
 }
 @media (max-width: 576px) {
-        max-width: 350px;
+        max-width: 330px;
 
         h3{font-size: 20px;
         }
