@@ -20,7 +20,7 @@ const Felicitaciones = () => {
   
         </FelicitacionesH2>
     <FelicitacionesButton onClick={() => navigate('/')}> Volver a Inicio</FelicitacionesButton>
-    <FelicitacionesButtonAlt onClick={() => navigate('/mis-ordenes')}> Ver mis pedidos</FelicitacionesButtonAl>
+    <FelicitacionesButtonAlt onClick={() => navigate('/mis-ordenes')}> Ver mis pedidos</FelicitacionesButtonAlt>
     </FelicitacionesWrapper>
   )
 }
