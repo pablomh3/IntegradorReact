@@ -24,7 +24,7 @@ const User = () => {
                   { currentUser ? 
                 <>
                     <IniciaSesionUser onClick={() => navigate('/mis-ordenes')}> <ImUser size={15}/> <u> Mis órdenes </u> </IniciaSesionUser>
-                    <RegistrarseUser onClick={() => {dispatch(setCurrentUser(null))}}> <FaUserMinus size={14}/> <u>Cerrar sesión </u></RegistrarseUser>
+                    <RegistrarseUser onClick={() => {dispatch(setCurrentUser(null)); {navigate('/')} }} > <FaUserMinus size={14}/> <u>Cerrar sesión </u></RegistrarseUser>
                 </> :
                 <>
                 <IniciaSesionUser onClick={() => navigate('/iniciar-sesion')}> <ImUser size={14}/> <u> Iniciá Sesión </u></IniciaSesionUser>
