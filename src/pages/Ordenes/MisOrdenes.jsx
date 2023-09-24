@@ -12,8 +12,7 @@ const MisOrdenes = () => {
     const dispatch = useDispatch();
     const currentUser = useSelector(state => state.user.currentUser);
     const { orders, error } = useSelector(state => state.orders);
-   console.log(orders)
-    console.log(currentUser)
+   
     useEffect(() => {
       if (!orders) {
         getOrders(dispatch, currentUser);
