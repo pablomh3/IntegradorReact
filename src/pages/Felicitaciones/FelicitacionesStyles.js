@@ -119,12 +119,12 @@ border: 1px solid var(--azul);
  background: var(--azul);
  font-family: 'Geostar Fill', cursive;
  font-size: 18px;
- color: var(--blanco);
+ color: linear-gradient(to left, #4c96d7, #8a25b1);
  font-weight: 700;
  
  cursor: pointer;
 :hover{
- color: var(--cyan);
+ color: var(--blanco);
  transition: all 0.3s;
 }
 @media (max-width: 576px){
