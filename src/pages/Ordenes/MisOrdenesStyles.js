@@ -40,17 +40,7 @@ export const OrdenesContainer = styled.div`
   color: transparent;
   text-align: center;
   }
-  @media (max-width: 992px) {
-        
-    h1{font-size: 30px;
-    }}
-
-    @media (max-width: 576px){
-      
-      h1{
-        font-size: 25px;
-      }
-}
+   
 `
 
 export const OrderContainerStyled = styled.div`
@@ -98,6 +88,16 @@ h2{
     transition: all 0.5s;
     cursor: pointer;
 }
+@media (max-width: 576px) {
+        max-width: 350px;
+
+        h3{font-size: 20px;
+        }
+      h2{
+        font-size: 20px;
+      }
+      }
+    
 `
 export const Button = styled.button`
  border: 1px solid var(--azul);
