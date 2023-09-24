@@ -42,7 +42,7 @@ export const OrdenesContainer = styled.div`
   }
    @media (max-width: 576px){
     h1{
-      margin-top: 100px;
+      margin-top: 80px;
       font-size: 30px;
     }
    }
