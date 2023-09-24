@@ -123,9 +123,9 @@ border: 1px solid var(--azul);
  font-weight: 700;
  
  cursor: pointer;
- margin-top: 20px;
+ margin-top: 10px;
 :hover{
- color: var(--blanco);
+ color: var(--azul);
  transition: all 0.3s;
 }
 @media (max-width: 576px){
