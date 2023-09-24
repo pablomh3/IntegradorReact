@@ -65,7 +65,7 @@ const Registro =() => {
                         <LinksRegister>
                             <LinkRegister onClick={() => navigate('/iniciar-sesion')}> ¿Ya tenés cuenta? <u>Iniciar Sesión</u></LinkRegister>
                         </LinksRegister>
-                        <RegisterButton onClick={() => navigate('/iniciar-sesion')}>Enviar</RegisterButton>
+                        <RegisterButton onClick={() => navigate('/')}>Enviar</RegisterButton>
                     </Form>
                     
                 </Formik>
