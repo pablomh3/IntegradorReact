@@ -1,5 +1,5 @@
 import React from 'react'
-import { FelicitacionesButton, FelicitacionesH2, FelicitacionesTitle, FelicitacionesWrapper } from './FelicitacionesStyles'
+import { FelicitacionesButton, FelicitacionesButtonAlt, FelicitacionesH2, FelicitacionesTitle, FelicitacionesWrapper } from './FelicitacionesStyles'
 import { BiJoystick } from 'react-icons/bi'
 import {MdOutlineVideogameAsset } from 'react-icons/md'
 import {TbDiscountCheck} from 'react-icons/tb'
@@ -20,7 +20,7 @@ const Felicitaciones = () => {
   
         </FelicitacionesH2>
     <FelicitacionesButton onClick={() => navigate('/')}> Volver a Inicio</FelicitacionesButton>
-    <FelicitacionesButton onClick={() => navigate('/mis-ordenes')}> Ver mis pedidos</FelicitacionesButton>
+    <FelicitacionesButtonAlt onClick={() => navigate('/mis-ordenes')}> Ver mis pedidos</FelicitacionesButtonAl>
     </FelicitacionesWrapper>
   )
 }

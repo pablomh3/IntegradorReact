@@ -110,3 +110,26 @@ export const FelicitacionesButton = styled.button`
       font-size: 16px;
 }  
  `
+
+export const FelicitacionesButtonAlt = styled.button`
+
+border: 1px solid var(--azul);
+ border-radius: 10%;
+ padding: 9px 14px;
+ background: var(--blanco);
+ font-family: 'Geostar Fill', cursive;
+ font-size: 18px;
+ color: var(--azul);
+ font-weight: 700;
+ 
+ cursor: pointer;
+ margin-top: 20px;
+:hover{
+ color: var(--blanco);
+ transition: all 0.3s;
+}
+@media (max-width: 576px){
+    padding: 8px 12px;
+    font-size: 16px;
+}  
+`
