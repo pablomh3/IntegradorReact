@@ -50,7 +50,7 @@ const IniciarSesion =() =>{
                             <LinkLogIn onClick={() => navigate('/recuperar')}> <u> Olvidé mi contraseña</u> </LinkLogIn>
                             <LinkLogIn onClick={() => navigate('/registrarse')}>¿No tenés cuenta? <u>Registrate</u></LinkLogIn>
                         </LinksLogIn>
-                        <LogInButton>Enviar</LogInButton>
+                        <LogInButton type="submit">Enviar</LogInButton>
                     </Form>
                </Formik>
             </ContainerIniciarSesion>
