@@ -8,11 +8,12 @@ import { useDispatch } from "react-redux";
 import { useRedirect } from "../../hooks/UseRedirect";
 import { loginUser } from "../../axios/axios.user";
 import { setCurrentUser } from "../../redux/User/userSlice";
+import Loader from "../../components/Loader/Loader";
 
 const IniciarSesion =() =>{
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    useRedirect('/')
+    useRedirect('/productos')
     return(
         <IniciarSesionWrapper>
             
@@ -30,6 +31,7 @@ const IniciarSesion =() =>{
                     }))
                 }
             }}>
+                 {({ isSubmitting}) =>(
                     <Form>
 
                         <IniciarSesionForm
@@ -50,8 +52,9 @@ const IniciarSesion =() =>{
                             <LinkLogIn onClick={() => navigate('/recuperar')}> <u> Olvidé mi contraseña</u> </LinkLogIn>
                             <LinkLogIn onClick={() => navigate('/registrarse')}>¿No tenés cuenta? <u>Registrate</u></LinkLogIn>
                         </LinksLogIn>
-                        <LogInButton type="submit">Enviar</LogInButton>
+                        <LogInButton type="submit" > {isSubmitting ? <Loader/>  : 'Enviar'}</LogInButton>
                     </Form>
+                )}
                </Formik>
             </ContainerIniciarSesion>
         </IniciarSesionWrapper>

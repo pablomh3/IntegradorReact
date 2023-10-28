@@ -1,6 +1,5 @@
 export const addItemToCart = (cartItems, product) => {
     const productInCart = cartItems.find(item => item.id === product.id);
-  alert(` Agregaste ${product.name} al carrito`)
     if (productInCart) {
       return cartItems.map(item =>
         item.id === productInCart.id

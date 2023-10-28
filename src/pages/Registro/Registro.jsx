@@ -9,6 +9,7 @@ import { createUser } from "../../axios/axios.user"
 import { setCurrentUser } from "../../redux/User/userSlice"
 import { useRedirect } from "../../hooks/UseRedirect"
 import RegisterForm from "./RegisterFormik"
+import Loader from "../../components/Loader/Loader"
 
 const Registro =() => {
 
@@ -34,6 +35,7 @@ const Registro =() => {
                    navigate('/iniciar-sesion')
                 }}
                  >
+                    {({ isSubmitting}) =>(
                     <Form>
                         <RegisterForm htmlFor='nombre'
                         name='name'
@@ -60,9 +62,9 @@ const Registro =() => {
                         <LinksRegister>
                             <LinkRegister onClick={() => navigate('/iniciar-sesion')}> ¿Ya tenés cuenta? <u>Iniciar Sesión</u></LinkRegister>
                         </LinksRegister>
-                        <RegisterButton type="submit">Enviar</RegisterButton>
+                        <RegisterButton type="submit">{isSubmitting ? <Loader/>  : 'Enviar'}</RegisterButton>
                     </Form>
-                    
+                )}    
                 </Formik>
             </FormularioContainer>
         </RegistroContainer>
