@@ -25,7 +25,7 @@ export const loginUser = async (email, password) => {
         return response.data
     } catch (error) {
         console.log({ loginUserError: error })
-        return  alert(`contraseña y/o usuario erróneo ${error.response.data.errors[0].msg}`)
+        return alert("usuario y/o contraseña incorrecta")
        
     }
 }
