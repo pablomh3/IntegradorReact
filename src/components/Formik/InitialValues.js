@@ -25,3 +25,11 @@ export const newPasswordValues = {
     code: '',
     password: '',
 }
+export const ContactoInitialValues = {
+    name: '',
+    surname: '',
+    email: '',
+    cellphone: '',
+    message: '',
+
+}

@@ -10,6 +10,7 @@ import MisOrdenes from '../pages/Ordenes/MisOrdenes';
 import Products from '../pages/Products/Products';
 import RecuperarClave from '../pages/RecuperarContra/Recuperar';
 import NuevaContraseña from '../pages/Contraseña/Contraseña';
+import Contacto from '../pages/Contacto/Contacto';
 
 
 
@@ -25,6 +26,7 @@ function Routes  () {
                 <Route path='/recuperar' element={<RecuperarClave />} />
                 <Route path='/mis-ordenes' element={<MisOrdenes />} />
                 <Route path='/contraseña' element= {<NuevaContraseña/> } />
+                <Route path='/contacto' element= {<Contacto/> } />
                 <Route path='/checkout' element={<ProtectedRoute redirectTo='/registrarse'>
                     <Checkout/>
                 </ProtectedRoute> }/>

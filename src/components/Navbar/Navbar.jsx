@@ -35,6 +35,7 @@ const dispatch = useDispatch();
             <NavbarUl>
                 <NavbarLi> <Link to='/'> Home </Link>  </NavbarLi> 
                 <NavbarLi> <Link to='/productos'> Productos </Link>  </NavbarLi> 
+                <NavbarLi> <Link to='/contacto'> Contacto </Link>  </NavbarLi> 
             </NavbarUl>
             <LogoMini>
                 <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logosolo.png" alt="logo" /></Link>
@@ -44,7 +45,8 @@ const dispatch = useDispatch();
                 <>
                     <IniciaSesion onClick={() => navigate('/mis-ordenes')}> <ImUser size={22}/> <u> Mis órdenes </u> </IniciaSesion>
                     <Registrarse onClick={() => {dispatch(setCurrentUser(null)); {navigate('/')} }} >  <FaUserMinus size={21}/> <u>Cerrar sesión </u> </Registrarse>
-                </> :
+                </> 
+                :
                 <>
                 <IniciaSesion onClick={() => navigate('/iniciar-sesion')}> <ImUser size={18}/> <u> Iniciá Sesión </u></IniciaSesion>
                 <Registrarse onClick={() => navigate('/registrarse')}> <ImUserPlus size={16}/> <u> Registrate</u> </Registrarse>

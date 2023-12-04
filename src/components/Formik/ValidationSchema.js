@@ -28,3 +28,11 @@ export const checkoutValidationSchema = Yup.object({
     code: Yup.string().min(6, 'El código debe ser de 6 caracteres').required('Campo vacío'),
     password: Yup.string().min(6, 'Contraseña muy corta').required('Campo vacío')
   })
+
+  export const ContactoValidationSchema = Yup.object ({
+    name: Yup.string().required(' Escribe tu nombre'),
+    surname: Yup.string().required(' Escribe tu apellido'),
+    email: Yup.string().matches(regEmail,'Mail inválido').required('Escribe tu email'),
+    cellphone: Yup.string().required('Escribe tu celular'),
+    message: Yup.string().required('Escribe aquí tu mensaje')
+  })
