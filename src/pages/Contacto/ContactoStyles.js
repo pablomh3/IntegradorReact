@@ -194,3 +194,10 @@ h2{
   font-size: 18px;
 }
 `
+export const DataInfo = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 14px;
+gap: 4px;
+`
