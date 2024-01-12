@@ -1,19 +1,16 @@
 import { Formik } from "formik"
 import { Form, FormularioContainer, LinkRegister, LinksRegister, RegisterButton } from "../Registro/RegistroStyles"
 import { RegistroContainer, RegistroTitle, RegistroWrapper } from "./RegistroStyles"
-import { useDispatch } from "react-redux"
 import { useLocation, useNavigate } from "react-router-dom"
 import { registerInitialValues } from "../../components/Formik/InitialValues"
 import { registerValidationSchema } from "../../components/Formik/ValidationSchema"
 import { createUser } from "../../axios/axios.user"
-import { setCurrentUser } from "../../redux/User/userSlice"
 import { useRedirect } from "../../hooks/UseRedirect"
 import RegisterForm from "./RegisterFormik"
 import Loader from "../../components/Loader/Loader"
 
 const Registro =() => {
 
-    const dispatch = useDispatch()
     const { state } = useLocation()
     useRedirect(state?.redirectedFromCheckout ? '/checkout' : '/')
     const navigate = useNavigate()
@@ -30,7 +27,7 @@ const Registro =() => {
                  initialValues={registerInitialValues}
                 validationSchema={registerValidationSchema}
                 onSubmit={async (values, actions) => {
-                    const user = await createUser(values.name, values.email, values.password)
+                     await createUser(values.name, values.email, values.password)
                     actions.resetForm()
                    navigate('/iniciar-sesion')
                 }}

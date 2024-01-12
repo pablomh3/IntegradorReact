@@ -13,6 +13,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitch } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
+import { formContacto } from "../../axios/axios-contacto"
 
 const Contacto = () => {
     return (
@@ -23,8 +24,9 @@ const Contacto = () => {
                 <Formik
                     initialValues= {ContactoInitialValues}
                     validationSchema={ContactoValidationSchema}
-                    onSubmit={(e) => {
-                        e.preventdefault()
+                    onSubmit={async (values, actions) => {
+                         await formContacto(values.name, values.email, values.phone, values.message)
+                        actions.resetForm()
                     }}
                 >
                  {({ isSubmitting}) => (
