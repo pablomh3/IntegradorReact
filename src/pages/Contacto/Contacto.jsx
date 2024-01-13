@@ -38,13 +38,6 @@ const Contacto = () => {
                         placeholder='Tu nombre'>
                             Nombre:
                         </ContactoFormik>
-                        <ContactoFormik htmlFor='surname'
-                        name='surname'
-                        type='text'
-                        id='surname'
-                        placeholder='Tu apellido'>
-                            Apellido:
-                        </ContactoFormik>
                         <ContactoFormik htmlFor='email'
                         name='email'
                         type='email'

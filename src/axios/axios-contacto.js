@@ -4,7 +4,7 @@ import axios from 'axios'
 export const formContacto = async (name, email, phone, message) => {
 
     try{
-        const response = await axios.post (`${BASE_URL}/issues`, {
+        const response = await axios.post (`${BASE_URL}/issues/`, {
             name,
             email,
             phone,
