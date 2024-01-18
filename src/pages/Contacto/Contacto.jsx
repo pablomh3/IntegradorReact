@@ -25,7 +25,7 @@ const Contacto = () => {
                     initialValues= {ContactoInitialValues}
                     validationSchema={ContactoValidationSchema}
                     onSubmit={async (values, actions) => {
-                         await formContacto(values.name, values.email, values.phone, values.message)
+                         await formContacto(values.name, values.surname, values.email, values.cellphone, values.message)
                         actions.resetForm()
                     }}
                 >
@@ -37,6 +37,13 @@ const Contacto = () => {
                         id='nombre'
                         placeholder='Tu nombre'>
                             Nombre:
+                        </ContactoFormik>
+                        <ContactoFormik htmlFor='apellido'
+                        name='surname'
+                        type='text'
+                        id='apellido'
+                        placeholder='Tu apellido'>
+                            Apellido:
                         </ContactoFormik>
                         <ContactoFormik htmlFor='email'
                         name='email'
