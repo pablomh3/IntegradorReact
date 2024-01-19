@@ -73,7 +73,7 @@ export const ContactoData = styled.div `
     width: 100%;
 }
     }
-    @media (max-width: 460px) {
+    @media (max-width: 520px) {
         width: 400px;
         img{
       width: 70%;

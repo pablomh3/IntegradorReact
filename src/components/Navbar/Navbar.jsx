@@ -28,6 +28,7 @@ const dispatch = useDispatch();
             <LogoImg>
                 <Link to='/'> <img src="https://integradorjavascript-taupe.vercel.app/img/logo-nombre1.png" alt="logo" /></Link>
             </LogoImg>
+            
 
             <UserContainer onClick={() => hiddenCart ?  dispatch (toggleHiddenMenu()) : dispatch (toggleHiddenCart()) & dispatch (toggleHiddenMenu())} >
                 <GiHamburgerMenu size={22} />

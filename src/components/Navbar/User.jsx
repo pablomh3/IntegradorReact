@@ -2,12 +2,14 @@ import React from 'react'
 import { AnimatePresence } from 'framer-motion';
 import { ImUser, ImUserPlus } from 'react-icons/im';
 import { FaUserMinus } from 'react-icons/fa';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentUser } from "../../redux/User/userSlice";
-import { ContainerUser, IniciaSesionUser, ListaProductos, ProductosH2, RegistrarseUser } from './UserStyles';
+import { ContactoNavbar, ContainerUser, IniciaSesionUser, ListaProductos, ProductosH2, RegistrarseUser } from './UserStyles';
 import { MdGames } from 'react-icons/md'
 import UserCategories from './UserCategories';
+import { MdOutlineEmail } from "react-icons/md";
+
 const User = () => {
     const currentUser = useSelector(state => state.user.currentUser);
     const dispatch = useDispatch();     
@@ -36,6 +38,8 @@ const User = () => {
                 <UserCategories>
 
                 </UserCategories>
+                <ContactoNavbar onClick={() => navigate ('/contacto')}> <MdOutlineEmail size={16} color='var(--cyan)' /> Contacto</ContactoNavbar>
+                
 
               </ListaProductos>
             </ContainerUser>

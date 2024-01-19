@@ -101,3 +101,19 @@ transition: all 0.2s;
     transform: scale(1.0);
 }
 `
+export const ContactoNavbar = styled.div`
+    background: linear-gradient(to left, var(--magenta), var(--cyan));
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: 'Press Start 2P', cursive;
+    color: transparent;
+    font-size: 15px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    cursor: pointer;
+    transition: all 0.2s;
+    gap: 5px;
+
+`
