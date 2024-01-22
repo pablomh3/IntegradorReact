@@ -34,7 +34,6 @@ const dispatch = useDispatch();
                 <GiHamburgerMenu size={22} />
             </UserContainer>
             <NavbarUl>
-                <NavbarLi> <Link to='/'> Home </Link>  </NavbarLi> 
                 <NavbarLi> <Link to='/productos'> Productos </Link>  </NavbarLi> 
                 <NavbarLi> <Link to='/contacto'> Contacto </Link>  </NavbarLi> 
             </NavbarUl>
@@ -66,5 +65,3 @@ const dispatch = useDispatch();
     )
 }
 export default Navbar
-
-// #181818
